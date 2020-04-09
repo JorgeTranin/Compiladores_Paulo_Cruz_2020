@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de compiladores</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <header class="row text-white bg-dark shadow-lg">
+
+    <div class="container p-4">
+
+
+      <div class="col-12 mx-auto text-center">
+        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+
+        <h1>Antonio Jorge</h1>
+        <small>Curso de compiladores</small>
+      </div>
+      <div class="col-12 mx-auto mt-4">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pagina1.html">Introdução a Compiladores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
+          </li>
+
+          <ul class="nav nav-pills">
+
+            <li role="presentation" class="dropdown p-2">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Mas Aulas <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="container mt-5 animated zoomInLeft text-justify">
+    <div class="row">
+      <div class="col-12 p-4 text-center">
+        <h1 class="border-bottom p-2 mb-3">Analise Léxica</h1>
+
+        <p class="text-justify">
+          A análise léxica também conhecida como scanner ou leitura é a primeira fase
+          de um processo de compilação e sua função é fazer a leitura do programa fonte,
+          caractere a caractere, agrupar os caracteres em lexemas e produzir uma sequência
+          de símbolos léxicos conhecidos como tokens.
+          A sequência de tokens é enviada para ser processada pela analise sintática que é a
+          próxima fase do processo de compilação .
+          O analisador léxico deve interagir com a tabela de símbolos inserindo informações
+          de alguns tokens, como por exemplo os identificadores. A nível de implementação a analise léxica
+          normalmente é uma sub-rotina da análise sintática formando um único passo, porem ocorre uma divisão conceitual
+          para simplificar a modularizarão do projeto de um compilador.
+        </p>
+        <img src="./img/lexica1.png" style="width: 70%;" class="mt-5">
+        <figure>
+          <small>Imagem meramente ilustrativa</small>
+        </figure>
+
+      </div>
+      <section class="container mt-5 animated zoomInLeft text-justify">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 text-justify">
+              <h4 class="border-bottom p-2 mb-3">Visão geral</h4>
+
+              <p class="mt-3">
+                A análise léxica pode ser dividida em duas etapas, a primeira chamada de escandimento que é
+                uma simples varredura removendo comentários e espaços em branco, e a segunda etapa, a analise
+                léxica propriamente dita onde o texto é quebrado em lexemas.
+              </p>
+              <ul>
+                <li class="mt-3">
+                  <small>
+                    Padrão: é a forma que os lexemas de uma cadeia de caracteres pode assumir. No caso de palavras
+                    reservadas é a sequência de caracteres que formam a palavra reservada, no caso de identificadores
+                    são os caracteres que formam os nomes das variáveis e funções.
+                  </small>
+                </li>
+                <li class="mt-3">
+                  <small>
+                    Lexema: é uma sequência de caracteres reconhecidos por um padrão.
+                  </small>
+                </li>
+                <li class="mt-3">
+                  <small>
+                    Token: é um par constituído de um nome é um valor de atributo esse ultimo opcional. O nome de um
+                    token é
+                    um símbolo que representa a unidade léxica. Por exemplo: palavras reservadas; identificadores;
+                    números, etc.
+                  </small>
+                </li>
+              </ul>
+              <p>Exemplo 1</p>
+              <code>  printf("Total = %d\n", score)</code>
+              <li class="mt-4 mb-3">onde:</li>
+              <p class="mt-4">
+                printf e score são lexemas que casam com o padrão identificador.
+                Total = %d\n é um lexema que casa com o padrão literal.
+                () lexemas que auxiliam a identificação de uma função.
+              </p>
+              <p class="mt-4">Exemplo 2</p>
+              <code>
+                  const PI = 3.1416
+                </code>
+              <small class="mt-4 mb-3">onde:</small>
+              <li class="mt-4 mb-3">const casa com o padrão const que também é um lexema.</li>
+              <li class="mt-4 mb-3">PI é um lexema que casa com o padrão identificador.</li>
+              <li class="mt-4 mb-3">= é um lexema que casa com o padrão do token atribuição.</li>
+              <li class="mt-4 mb-3">3.1416 é um lexema que casa com o padrão do token numero.</li>
+
+            </div>
+            <div class="col-6 text-justify">
+              <img src="./img/lexical2.PNG"
+                style="border-style: ridge;width: 119%;margin-top: 39px;margin-left: 31px;}">
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    </div>
+
+    <section class="container mt-5 animated zoomInLeft text-justify">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="border-bottom p-2 mb-3 text-center">Tokens</h5>
+            <p>Os tokens podem ser divididos em dois grupos:</p>
+            <li>Tokens simples: são tokens que não têm valor associado pois a classe do token já a descreve.
+              Exemplo: palavras reservadas, operadores, delimitadores:
+              <code>
+
+                    </code>
+            <li>Tokens com argumento: são tokens que têm valor associado e corresponde a elementos da
+              linguagem definidos pelo programador. Exemplo: identificadores, constantes numéricas
+              <code>
+
+                    </code>
+              <br>
+              <p class="mt-4">
+                Onde o nome do token corresponde a uma classificação do token, por exemplo: numero,
+                identificador, const. E o valor do atributo corresponde a um valor qualquer que pode
+                ser atribuído ao token, por exemplo o valor de entrada na tabela de símbolos.
+              </p>
+              <img src="./img/lexical3.PNG"
+                style="width: 101%;margin-left: -1%;border-color: #e0f1f7;border-style: ridge;height: 247px;">
+          </div>
+
+          <div class="col-sm">
+            <h5 class="border-bottom p-2 mb-3 text-center text-justify">Passos para identificar uma sequência de tokens
+            </h5>
+            <p>
+              A análise léxica divide o código fonte em tokens que posteriormente são classificados de acordo
+              com a classe no qual o token pertence. Toda classe tem uma descrição do que ela representa na linguagem de
+              programação.
+            </p>
+            <small>Veja as etapas para construir um analisador léxico:</small>
+            <li class="mt-2">Reconhecer a substring relacionada ao token através de um padrão;</li>
+            <li class="mt-2">Partir as strings de entrada em lexemas separando-as do restante dos arquivo fonte; e</li>
+            <li class="mt-2">Identificar e classificar o token de cada lexema.</li>
+            <small class="mt-2">São tipos de metacaracteres que definem um número permitido de repetições na expressão
+              regular.</small>
+
+            <img src="./img/lexical4.PNG"
+              style="width: 102%;border-color: #e0f1f7;border-style: ridge;margin-top: 17px;">
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center border-bottom p-2 mb-3">Analise Sintática</h1>
+            <p>
+              O Analisador sintático também conhecido como parser tem como tarefa principal determinar
+              se o programa de entrada representado pelo fluxo de tokens possui as sentenças válidas
+              para a linguagem de programação.
+              A analise sintática e a segunda etapa do processo de compilação e na maioria dos casos utiliza
+              gramáticas livres de contexto para especificar a sintaxe de uma linguagem de programação.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="text-center border-bottom p-2 mb-3">Visão geral</h5>
+            <p>
+              A sintaxe é a parte da gramática que estuda a disposição das palavras na frase e das frases em um
+              discurso. Essa etapa no processo de compilação deve reconhecer as forma do programa fonte e determinar se
+              ele é valido ou não.
+            </p>
+            <p>
+              Esse modelo pode ser definido utilizando gramáticas livres de contexto que representam uma gramática
+              formal e pode ser escrita através de algoritmos fazem a derivação de todas as possíveis construções da
+              linguagem.
+            </p>
+
+            <li class="mt-2">Símbolo: são os elementos mínimos que compõe uma linguagem. Na linguagem humana são as
+              letras.</li>
+            <li class="mt-2">Sentença: É um conjunto ordenado de símbolos que forma uma cadeia ou string. Na linguagem
+              humana são as palavras.</li>
+            <li class="mt-2">Alfabeto: É um conjunto de símbolos. Na linguagem humana é o conjunto de letras {a, b, c,
+              d, ...}</li>
+            <li class="mt-2">Linguagem: É o conjunto de sentenças, Na linguagem humana são os conjuntos de palavras
+              {compiladores, linguagem, ...}</li>
+            <li class="mt-2">Gramática: É uma forma de representar as regras para formação de uma linguagem.</li>
+            <img src="./img/semantica1.PNG" class="mt-3" style="width: 105%;">
+            <p class="mt-4 text-justify">Observe a estrutura sintática de uma linguagem de programação. Temos as
+              divisões dos blocos, compostos por comandos, compostos por expressões.</p>
+            <img src="./img/semantica2.PNG" style="margin-left: -21px;">
+            <p>Entende-se por regras gramáticas as formas como podemos descrever a estrutura sintática do programa.
+              Veja um exemplo no diagrama abaixo demostrando esse processo de compilação visto das etapas estudadas até
+              o momento.</p>
+          </div>
+          <div class="col-6">
+            <h5 class="text-center border-bottom p-2 mb-3">Gramática Livre de Contexto - GLC</h5>
+            <p>
+              As linguagens de programação em geral pertencem a uma categoria chamada de Linguagens Livres de Contexto.
+              Umas das formas de representar essas linguagens é através de Gramáticas Livres de Contexto que são a base
+              para a construção de analisadores sintáticos. Elas são utilizadas para especificar as regras sintáticas de
+              uma linguagem de programação, uma linguagem regular pode ser reconhecida por uma automato finitos
+              determinísticos e não determinísticos, já uma Gramatica Livre de Contexto pode ser reconhecida por um
+              automato de pilha. </p>
+            <p>
+              Outra aplicação de GLC são os DTD - Definição de Tipos de Documentos - utilizados por arquivos XML que
+              descreve as tags de uma forma natural, as tags deve estar aninhas afim de lidar com o significado do
+              texto. </p>
+
+            <li class="mt-2">Símbolos terminais: Conjunto finito de símbolos básicos que formam as palavras da
+              linguagens, são representadas pelo tokens reconhecidos pelo analisador lexico.</li>
+            <li class="mt-2">Símbolos não terminais: Conjunto finito de variáveis utilizadas para representar os
+              conjuntos da linguagem, são formadas pelos terminas e pelos próprios símbolos não terminais.</li>
+            <li class="mt-2">Símbolo inicial: É a variável, simbolo não terminal, que representa o inicio da definição
+              da linguagem.</li>
+            <li class="mt-2">Regras de produções: Representa um conjunto de regras sintáticas que representam a
+              definição da linguagem, indicam como símbolos terminais e não terminais podem ser combinados.</li>
+
+            <p>
+              Já o analisador sintático vê o mesmo texto como uma sequência de sentenças que deve satisfazer as regras
+              gramaticais. É através da gramática que podemos validar expressões criadas na linguagem de programação.
+            </p>
+            <small class="mt-4">Onde:</small>
+            <li class="mt-4">A é uma variável - simbolo não terminal.</li>
+            <li class="mt-4">-> simbolo de produção .</li>
+            <li class="mt-4">α é a combinação símbolos terminais e não terminais que representam a forma como uma string
+              vai ser formada.</li>
+
+            <small class="mt-4">Veja o exemplo de uma Gramatica Livre de Contexto.</small><br>
+            <code class="mt-4"><br>
+                  G = ({S}, {a, b}, P, S) <br>
+
+                  P = {  <br> 
+                  S → aSb<br>
+                  S → λ  <br>
+                 }<br>
+                </code><br>
+
+            <strong class="mt-4">Essa gramatica é formada pelas terminais a e b, que são os tokens da linguagem, como
+              regras de produção nos temos aSb que obriga ter um a e b nas extremidades da palavras, o simbolo λ que
+              significa vazio.</strong>
+
+            <img src="./img/semantica3.PNG" style="margin-top: 100px;">
+          </div>
+        </div>
+    </section>
+
+
+
+
+
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie
+          </p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br"
+              target="_blank">World</a></p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+
+
+  <script src="./js/bootstrap.min.js" async defer></script>
+</body>
+
+</html>

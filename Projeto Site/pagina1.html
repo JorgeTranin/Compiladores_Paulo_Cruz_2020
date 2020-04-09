@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de compiladores</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+  <header class="row text-white bg-dark shadow-lg">
+
+    <div class="container p-4">
+
+
+      <div class="col-12 mx-auto text-center">
+        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+
+        <h1>Antonio Jorge</h1>
+        <small>Curso de compiladores</small>
+      </div>
+      <div class="col-12 mx-auto mt-4">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pagina1.html">Introdução a Compiladores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
+          </li>
+
+          <ul class="nav nav-pills">
+
+            <li role="presentation" class="dropdown p-2">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Mas Aulas <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+    <section class="container mt-5 bg-light p-4 animated zoomInLeft">
+            <div class="row p-4">
+              <div class="col-sm">
+                <img src="./img/compiladores.png" class="img-fluid compiladores-img">
+              </div>
+              <div class="col-sm mt-4 text-justify">
+                <h4 style="text-align:center;" class="border-bottom p-2 mb-3">Compiladores</h4>
+                <strong>Breve Historia:</strong>
+                <small><p>  Os softwares para os primeiros computadores foram escritos principalmente em
+                            linguagem assembly por muitos anos. As linguagens de alto nível de programação
+                            não foram inventadas até que os benefícios de ser capaz de reutilizar software
+                            em diferentes tipos de CPUs passassem a ser significativamente maiores do que
+                            o custo de se escrever um compilador. A capacidade de memória muito limitada
+                            dos primeiros computadores também criava muitos problemas técnicos na implementação
+                            de um compilador.
+                    </p>
+                     <p>
+                        No final da década de 1950, as linguagens de programação independentes
+                        de máquina foram propostas. Posteriormente, vários compiladores experimentais
+                        foram desenvolvidos. O primeiro compilador foi escrito por Grace Hopper,[8] em 1952,
+                        para a linguagem de programação A-0. Antes de 1957, foram desenvolvidos esforços
+                        e várias contribuições ao desenvolvimento de linguagens de alto nível foram feitas.
+                        Entre estes, o desenvolvimento da Short Code (UNIVAC), Speedcoding no IBM 701,
+                        o Whirlwind, o BACAIC e o PRINT. A equipe de desenvolvimento do FORTRAN liderada
+                        por John Backus na IBM é geralmente creditada como tendo introduzido o primeiro compilador
+                        completo em 1957 (embora tenha ocorrido simultaneamente o desenvolvimento do algebraic
+                        translator de Laning e Zierler). O COBOL é um exemplo de uma linguagem da primeira
+                        geração que compilava em múltiplas arquiteturas, em 1960.
+                     </p>
+                    </small>
+              </div>
+            </div>
+            
+            <div class="container">
+                <div class="row">
+                  <div class="col-9 text-justify mt-4">
+                    <h5  class="border-bottom p-2 mb-3">Introdução e visão geral sobre compiladores</h5>
+                    
+                        <p>
+                            A construção de compiladores abrange diversas áreas de estudo em Ciências da Computação, como por exemplo conceitos de Linguagens de Programação, Arquitetura de Máquina, Algoritmos e Engenharia de Software. Nesse capítulo será apresentado uma introdução ao processo de compilação mostrando uma visão de alto nível da estrutura de um compilador.
+                            As linguagens de programação e a arquitetura de computadores evoluem e estão cada vez mais sofisticados. O desafio dos projetistas de compiladores é criar algoritmos mais eficientes que visem obter um melhor desempenho no uso de memória e processamento.
+                            Conhecer como um compilador funciona é essencial para entender a ligação entre Engenharia de Software, Linguagens de Programação, Sistemas Operacionais e Arquitetura de Computadores.
+                            Nessa primeira parte do ebook vamos apresentar as etapas envolvidas no processo de compilação e como elas se relacionam entre si, com o objetivo de gerar um programa executável.   
+                        </p>
+                        <h5  class="border-bottom p-2 mb-3">O Compilador</h5>
+                        <p>
+                            O compilador é um software complexo que converte uma linguagem fonte, ou linguagem origem, em uma linguagem destino, ou linguagem-objeto, ou seja, converte um programa originado de uma linguagem de programação para uma linguagem que possa ser entendida e executada por um computador. Durante a compilação são executadas tarefas que fazem a tradução de uma linguagem em outra.
+                        </p>
+                        <p>
+                            Existem dois princípios fundamentais na construção de compiladores:
+                        </p>
+                        <small>
+                            <p>O compilador deve preservar o significado do programa a ser compilado; e</p>
+                            <p>O compilador deve melhorar o programa de entrada de alguma forma perceptível.</p>
+                        </small>
+                        <p>
+                            As etapas de compilação são complexas e exigiam um esforço significativo, sendo que os
+                             primeiros compiladores eram escritos em código binário e salvos na memória ROM. Hoje
+                              nós temos um conjunto de ferramentas que facilitam a criação e manutenção de compiladores,
+                               muitas dessas ferramentas são escritas em linguagem como Java, C e C++ e já automatizam boa
+                                parte da construção de um compilador.
+
+                        </p>
+                        <p>
+                            O processo de tradução de uma linguagem de alto nível para linguagem de baixo nível
+                             é feito através de softwares conhecidos como compiladores e tem como entrada uma linguagem fonte,
+                              alto nível, e como saída uma linguagem-objeto, baixo nível.
+                        </p>
+                        <img src="./img/compiladores3.gif" class="p-4">
+
+                        <h5  class="border-bottom mt-4 mb-3">O Compiladores vs. Interpretadores</h5>
+                        <p>
+                            Diferente do compilador o interpretador recebe como estrada uma especificação executável
+                             e produz como saída, a execução dessa especificação. Linguagens como PHP, Scheme, Python
+                              são interpretadas.
+                        </p>
+                        <p>
+                            Um interpretador pode ser entendido como um processo que, ao invés de visar um conjunto de
+                             instruções de um processador, visa produzir o efeito de sua execução. Eles normalmente
+                              interpretam uma representação intermediária do programa fonte.
+                        </p>
+                        <img src="./img/compiladores4.png" class="p-4" >
+
+                        <h5 class="border-bottom mt-4 mb-3">Estrutura de um compilador</h5>
+                        <p>
+                            O processo de compilação é muito complexo, existindo uma estrutura básica que divide esse
+                             processo em fases, essas fases estão representadas por duas tarefas conhecidas como análise
+                              e síntese.
+                        </p>
+                        <p>
+                            Essa divisão de fases tem como objetivo dar uma visão explicita e detalhada do processo de
+                             compilação. A tarefa de análise também chamada de front-end divide o programa fonte em partes
+                              e impõe uma estrutura gramatical sobre elas, uma das principais responsabilidades da tarefa
+                               de análise é garantir que a sintaxe e semântica do programa fonte estejam corretos. A tarefa
+                                de síntese constrói o programa objeto a partir da representação criada na tarefa de análise.
+                                 A síntese é conhecida como back-end.
+
+                        </p>
+                        <img src="./img/compiladores5.png" class="p-4" >
+                        <strong>
+                            <small>
+                                É importante destacar que esse estrutura dividida em seis fases é apenas uma representação
+                                 didática e tem como objetivo demostrar como o compilador funciona, outras literaturas podem
+                                  apresentar outros modelos com mais ou menos etapas.
+                            </small>
+                        </strong>            
+                  </div>
+                  <div class="col-3">
+                      <img src="./img/compilador2.png" class="img-fluid" style="margin-top: 40%;">
+                  </div>
+
+                 
+                
+                </div>
+              </div>
+
+    </section>
+    <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>links</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>links</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>links</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+                </ul>
+              </div>
+          
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            </hr>
+          </div>	
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie</p>
+              <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br" target="_blank">World</a></p>
+            </div>
+            </hr>
+          </div>	
+        </div>
+      </section>
+      <!-- ./Footer -->
+
+    
+   
+    <script src="./js/bootstrap.min.js" async defer></script> 
+</body>
+</html>

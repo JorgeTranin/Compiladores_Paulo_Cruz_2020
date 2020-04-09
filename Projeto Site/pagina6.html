@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de compiladores</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  <header class="row text-white bg-dark shadow-lg">
+
+    <div class="container p-4">
+
+
+      <div class="col-12 mx-auto text-center">
+        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+
+        <h1>Antonio Jorge</h1>
+        <small>Curso de compiladores</small>
+      </div>
+      <div class="col-12 mx-auto mt-4">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html.html">Introdução a Compiladores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
+          </li>
+
+          <ul class="nav nav-pills">
+
+            <li role="presentation" class="dropdown p-2">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Mas Aulas <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="container mt-5 p-2 animated zoomInLeft">
+    <div class="row">
+      <div class="col-12 col-12 p-2 mb-2">
+        <h1 class="mt-4 text-center border-bottom">Processo de Tradução e Execução de Programas</h1>
+        <h4>Introdução</h4>
+        <p class="">
+          Todos os programas passam por quatro etapas de transformação desde o código-fonte armazenado no computador até
+          </br>
+          a etapa que este código será executado na máquina. A Figura 1 abaixo mostra essas etapas de tradução,
+          alguns</br>
+          sistemas combinam essas etapas, porém essas são consideradas as quatro etapas lógicas pelas quais os
+          programas</br>
+          passam.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-12 p-2 mb-2">
+        <img src="./img/Processo_Traducao_Execucao_intro.jpg" alt="">
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 p-2 mb-2">
+        <h4 class="border-bottom mt-4 text-center ">Compilador</h4>
+        <p class="text-justify mt-2 p-2">
+          Um compilador basicamente transforma um programa “.java” ou “.c” em um programa assembly que é a forma
+          simbólica de como a máquina entende. Os programas em alto nível como C e Java utilizam muito menos código do
+          que o assembly, isso aumenta significativamente a produtividade do programador. Isso ocorre porque o assembly
+          possui um número reduzido de instruções que precisam ser combinadas para realizar o que uma única instrução em
+          código alto nível realiza.
+        </p>
+        <p class="text-justify mt-2 p-2">No meio da década de 70 os sistemas operacionais e montadores eram todos
+          escritos em assembly, pois as
+          memórias eram pequenas e os compiladores eram ineficientes. Com o aumento significativo das memórias e os
+          compiladores otimizadores de hoje que podem produzir programas em assembly quase tão bem quanto um
+          especialista em assembly, temos que as linguagens de alto nível tomaram conta do mercado, sendo utilizadas em
+          sistemas operacionais, sistemas aplicativos, utilitários, etc.</p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 p-2 mb-2">
+        <h4 class="text-center border-bottom mt-2 p-2">Montador</h4>
+        <p class="text-justify mt-2 p-2">
+          Assim como o assembly é a interface com o software de nível superior, o montador converte a instrução em
+          assembly para o equivalente em linguagem de máquina. Portanto, a função do montador é transformar um programa
+          em assembly em um arquivo objeto, que é uma combinação de instruções de linguagem de máquina, dados e
+          informações necessárias para colocar instruções corretamente na memória. Cada instrução no programa assembly
+          será convertida em uma versão binária da instrução.
+        </p>
+        <strong class="text-justify mt-2 p-2">O arquivo objeto normalmente contém seis partes distintas:</strong>
+        <li class="text-justify mt-2 p-2">O cabeçalho do arquivo objeto que contém o tamanho e a posição de outras
+          partes do arquivo objeto;</li>
+        <li class="text-justify mt-2 p-2">O segmento de dados estáticos que contém os dados alocados por toda a vida do
+          programa;</li>
+        <li class="text-justify mt-2 p-2">As informações de relocação que identificam instruções e words de dados que
+          dependem de endereços absolutos quando o programa é carregado na memória;</li>
+        <li class="text-justify mt-2 p-2">A tabela de símbolos que contém os rótulos restantes que não estão definidos,
+          como as referências externas;</li>
+        <li class="text-justify mt-2 p-2">As informações de depuração que contém uma descrição resumida de como os
+          módulos foram compilados, para que o depurador possa associar as instruções de máquina aos arquivos fonte e
+          tornar as estruturas de dados legíveis.</li>
+
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 p-2 mb-2">
+        <h4 class="text-center border-bottom mt-2 p-2">Link-Editor</h4>
+        <p class="text-justify mt-2 p-2">
+          A função do link-editor é juntar as rotinas que já foram montadas,
+          como as rotinas de biblioteca. Também é função do link-editor compilar
+          e montar cada procedimento de forma independente, de modo que uma mudança
+          em uma linha só exija a compilação e a montagem de um procedimento.
+          Isso evita que uma única mudança em uma linha de um procedimento exigisse
+          a compilação e montagem de um programa inteiro. Efetuar novamente a tradução
+          completa do programa seria um desperdício computacional enorme.
+        </p>
+        <strong class="text-justify mt-2 p-2">As três etapas realizadas por um link-editor são:</strong>
+        <li class="text-justify mt-2 p-2">Colocar os módulos de código e dados simbolicamente na memória;</li>
+        <li class="text-justify mt-2 p-2">Determinar os endereços dos rótulos de dados e instruções;</li>
+        <li class="text-justify mt-2 p-2">Remendar as referências internas e externas.</li>
+
+        <p class="text-justify mt-2 p-2">
+          O link-editor produz um arquivo executável que pode ser executado em um computador. Normalmente esse arquivo
+          possui o mesmo formato de um arquivo-objeto, exceto que não contém referências não resolvidas.
+        </p>
+        <p class="text-justify mt-2 p-2">
+          Nota-se que é o Link-Editor quem faz realmente o arquivo executável final e não o montador como muitos pensam.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 p-2 mb-2">
+        <h4 class="text-center border-bottom mt-2 p-2">Carregador (Loader)</h4>
+        <p class="text-justify mt-2 p-2">
+          Agora que o arquivo executável foi gerado, o sistema operacional
+          lê esse arquivo executável para a memória e o inicia.
+        </p>
+        <strong class="text-justify mt-2 p-2">Abaixo segue um exemplo das etapas seguidas pelo Carregador num sistema
+          Unix e Linux:</strong>
+        <li class="text-justify mt-2 p-2">Lê o cabeçalho do arquivo executável para determinar o tamanho dos segmentos
+          de texto e de dados;</li>
+        <li class="text-justify mt-2 p-2">Cria um espaço de endereçamento grande o suficiente para o texto e os dados;
+        </li>
+        <li class="text-justify mt-2 p-2">Copia as instruções e os dados do arquivo executável para a memória;</li>
+        <li class="text-justify mt-2 p-2">Caso exista, copia os parâmetros do programa principal para a pilha;</li>
+        <li class="text-justify mt-2 p-2">Inicializa os registradores da máquina e define o stack pointer para o primeiro local livre;</li>
+        <li class="text-justify mt-2 p-2">Desvia para uma rotina de partida, que copia os parâmetros para os registradores de argumentos e chama a
+          rotina principal do programa. Quando a rotina principal retorna, a rotina de partida termina o programa com
+          uma chamada ao sistema exit.</li>
+        
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-12 p-2 mb-2">
+
+
+      </div>
+    </div>
+
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie
+          </p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br"
+              target="_blank">World</a></p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+
+
+  <script src="./js/bootstrap.min.js" async defer></script>
+</body>
+
+</html>

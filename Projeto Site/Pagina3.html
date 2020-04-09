@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de compiladores</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header class="row text-white bg-dark shadow-lg">
+
+        <div class="container p-4">
+    
+    
+          <div class="col-12 mx-auto text-center">
+            <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+    
+            <h1>Antonio Jorge</h1>
+            <small>Curso de compiladores</small>
+          </div>
+          <div class="col-12 mx-auto mt-4">
+            <ul class="nav nav-pills nav-justified">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="pagina1.html">Introdução a Compiladores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="pagina3.html">Tipos De Compiladores</a>
+              </li>
+    
+              <ul class="nav nav-pills">
+    
+                <li role="presentation" class="dropdown p-2">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">
+                    Mas Aulas <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pagina2.html">Análise</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pagina2.html">Análise</a>
+                    </li>
+                  </ul>
+                </li>
+    
+              </ul>
+            </ul>
+    
+          </div>
+        </div>
+      </header>
+
+    <section class="container mt-5 animated zoomInLeft text-justify">
+        <div class="row">
+            <div class="col-sm p-4 text-center text-justify">
+                <h1 class="border-bottom p-2 mb-3 ">Tipos De Compiladores</h1>
+                <p class="text-center mt-4">A construção de um compilador é dividida em partes, cada uma com uma função especifica:</p>
+                <li class="text-justify mt-4">Analisador Léxico (AL): separa no programa fonte cada símbolo que tenha algum significado para a linguagem ou avisa quando um símbolo que não faz parte da linguagem é encontrado.</li>
+                <li class="text-justify mt-4">Análise Sintática (AS): é o responsável por verificar se a seqüência de símbolos existentes no programa fonte formam um programa válido ou não. É construído sobre uma gramática composta de uma série de regras que descrevem quais são as construções válidas da linguagem.</li>
+                <li class="text-justify mt-4">Análise Semântica (ASE): irá verificar se os aspectos semânticos estão corretos, ou seja, se não existem incoerências quanto ao significado das construções utilizadas pelo programador. A ASE depende de uma tabela de símbolos onde são armazenadas as informações de variáveis declaradas, funções ou métodos, entre outros.</li>
+                <li class="text-justify mt-4">Geração e Otimização de Código (GC): após a verificação que não existem 
+                    erros sintáticos ou semânticos, o compilador realiza a sua tarefa de criar
+                     o programa objeto que reflete, mediante instruções de baixo nível, os comandos
+                      do programa fonte. Também pode fazer a otimização do código, onde são aplicadas
+                       diversas técnicas para otimizar algumas características do programa objeto, como
+                        o seu tamanho ou sua velocidade.</li>
+                
+                <h5 class=" text-center mt-4">Pré-processador</h5>
+                <small class="text-justify mt-4">
+                    Muitos compiladores incluem um pré-processador. Um pré-processador normalmente é responsável por mudanças no código fonte destinadas de acordo com decisões tomadas em tempo de compilação. Por exemplo, um programa em C permite instruções condicionais para o pré-processador que podem incluir ou não parte do código caso uma assertiva lógica seja verdadeira ou falsa, ou simplesmente um termo esteja definido ou não. Tecnicamente, pré-processadores são muito mais simples que compiladores e são vistos pelos desenvolvedores como programas à parte, apesar dessa visão não ser necessariamente compartilhada pelo usuário.
+                </small>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="container mt-2 animated zoomInLeft text-justify">
+    <!-- 1ª div-->
+        <div class="row">
+            <div class="col-sm  text-center">
+                <img src="./img/img_tiposdecompiladores/tipos1.PNG" class="border">
+            </div>
+
+            <div class="col-sm  text-center border">
+                
+                <p class="text-justify mt-4" >Algoritimo: sequência finita de instruções.</p>
+
+                   <p class="text-justify mt-2"> Automação: Utiliza maquinas para executar um procedimento de forma automatica.</p>
+
+                   <p class="text-justify mt-2"> Programa de computador: Algoritimo e automação juntos. Onde
+                        algoritimo é uma sequencia de codigos e isso gera uma automação do procedimento.</p>     
+            </div>
+<!-- 2ª div-->
+            
+        </div>
+        <div class="row">
+            <div class="col-sm  text-center mt-4">
+                <img src="./img/img_tiposdecompiladores/tipos2.PNG" class="border">
+            </div>
+
+            <div class="col-sm  text-center border mt-4">
+                
+                <p class="text-justify mt-4" >Algoritmo é  uma receita para executarmos uma tarefa ou resolver algum problema. E como toda receita, um algoritmo também deve ser finito. A computação utiliza muito esse recurso.</p>
+
+                     
+            </div>
+
+            
+        </div>
+<!-- 3ª div-->
+        <div class="row">
+            <div class="col-sm  text-center mt-4">
+                <img src="./img/img_tiposdecompiladores/tipos3.PNG" class="border">
+            </div>
+
+            <div class="col-sm  text-center border mt-4">
+                
+                <p class="text-justify mt-4" >A sequencia descrita forma um programa, onde tem uma sequencia lógica para ser efetuado cada passo.
+
+                    Tendo um Inicio um meio e o Fim como uma sequencia lógica
+                    </p>
+
+                     
+            </div>
+
+            
+        </div>
+<!-- 4ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos4.PNG" class="border">
+    </div>
+
+    <div class="col-sm  text-justify border mt-4">
+        
+        <p class=" mt-4" >
+            Isso significa que ao utilizar uma maquina você pode facilitar um trabalho onde precisaria ficar repedindo algo muito mas facilmente.
+            </p>
+            <p>Utilizando maquinas para atuar em um determinada situação de forma automatica.</p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 5ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos5.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p  class="mt-4">Se refere a um Programa que está de forma logica executando alguns passos até chegar no fim.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 6ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos6.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class="mt-4">Algoritimo é uma forma de sequencia finita de passos onde na programação de computadores
+             tudo gira em torno deles. Todos os programas são feito com algoritimos.
+            </p>
+            <p>Automação é uma forma de executar e automatizar alguma tarefa então se encaixa perfeitamente em computação.</p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 7ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos7.PNG" class="border">
+    </div>
+
+    <div class="col-sm  text-justify border mt-4">
+        
+        <p class="mt-4" >Existe o computador e suas peças que são partes fisicas onde vc pode pegar.
+            </p>
+            <p>Já os programas de computadores são diversos algoritimos para fazer uma tarefa, ter a parte grafica para o usuário e Etc.</p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 8ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos8.PNG" class="border">
+    </div>
+
+    <div class="col-sm  text-justify border mt-4">
+        
+        <p class="mt-4" >Programa de computador  é um conjunto de instruções ou declarações a serem usadas direta ou indiretamente por um computador, a fim de obter um determinado resultado.
+             Ele é composto por um código-fonte, desenvolvido em alguma linguagem de programação.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 9ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos9.PNG" class="border">
+    </div>
+
+    <div class="col-sm  text-justify border mt-4">
+        
+        <p class="mt-4" >Aprendemos sobre algoritimos, linguagem lexica sintatica e tambem sobre programaas de computadores.
+            </p>
+            <p>Efetuando testes e sabendo diferenciar cada uma delas.</p>
+
+             
+    </div>
+
+    
+</div>
+<!-- 10ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos10.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Escolher uma linguagem de programação e a partir dai decidir o que o programa irá fazer.
+            </p>
+            <p>Fazer uma sequencia de algoritimos para alcançar o resultado.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 11ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos11.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Léxia: processo de analisar a entrada de linhas de caracteres e produzir uma sequência de símbolos chamado "símbolos léxicos".
+            </p>
+            <p>Sintática: é um processo de um compilador , é a segunda fase da compilação onde se analisa uma sequência que foi dada entrada  para verificar sua estrutura gramatical segundo uma determinada gramática formal.
+
+            </p>
+            <p>IDE: é um programa onde você faz o software .
+
+                Compilador: è um jeito de testar o programa parte por parte.
+                </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 12ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos12.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Léxia: processo de analisar a entrada de linhas de caracteres e produzir uma sequência de símbolos chamado "símbolos léxicos".
+            </p>
+            <p>Sintática: é um processo de um compilador , é a segunda fase da compilação onde se analisa uma sequência que foi dada entrada  para verificar sua estrutura gramatical segundo uma determinada gramática formal.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 13ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos13.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Léxia: processo de analisar a entrada de linhas de caracteres e produzir uma sequência de símbolos chamado "símbolos léxicos".
+            </p>
+            <p>Sintática: é um processo de um compilador , é a segunda fase da compilação onde se analisa uma sequência que foi dada entrada  para verificar sua estrutura gramatical segundo uma determinada gramática formal.</p>
+
+           <p>
+            IDE: é um programa onde você faz o software .
+           </p>  
+    </div>
+
+    
+</div>
+
+<!-- 14ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos14.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Linguagem de Programação é uma linguagem escrita e formal que especifica um conjunto de instruções e regras usadas para gerar programas (software).
+            </p>
+           
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 15ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos15.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >A análise léxica também conhecida como scanner ou leitura é a primeira fase de um processo de compilação e sua função é fazer a leitura do programa fonte, caractere a caractere.
+            </p>
+            
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 16ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos16.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >A análise sintática transforma um texto na entrada em uma estrutura de dados,
+             em geral uma árvore, o que é conveniente para processamento posterior e captura a hierarquia
+            implícita desta entrada. Através da análise lexical é obtido um grupo de tokens, para que o
+            analisador sintático use um conjunto de regras para construir uma árvore sintática da estrutura.
+        </p>
+            
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 17ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos17.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Cada linguagem de programação tem o seu uso e uma forma de ser programada,
+             existe milhares e cada uma serve para algo diferente e tambem podem ser muitos parecidas.
+            </p>
+            
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 18ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos18.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Um programa é um conjunto de codigo logicos que tem uma saída como resultado final para o usuário.
+            </p>
+            
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 19ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos19.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >
+            Um programa em C é composto por um conjunto de Funções. A função pela qual o programa começa a ser executado chama-se main.
+        </p>
+            <p>
+                Após cada cada comando em C deve-se colocar um ; (ponto-e-vírgula)
+            .</p>
+            <p>
+                Um programa em C deve ser Identado para que possa ser lido com mais facilidade.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 20ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos20.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >
+            O padrão C++ exige que main() retorne o tipo de dado int (inteiro).Tradicionalmente, o valor do retorno dessa função representa o valor de retorno do próprio programa, o qual é informado para o processo que o executou. Um término mal sucedido pode ser indicado com um valor diferente de zero.
+        </p>
+             
+    </div>
+
+    
+</div>
+
+<!-- 21ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos21.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >
+            Como C# é uma linguagem orientada a objetos, ela suporta conceitos como encapsulamento, herança e polimorfismo. Todas suas variáveis e métodos são encapsulados dentro das definições de uma classe. Ela é usada na maioria das classes do .
+        </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 22ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos22.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Todo programa em Java usa classes e objetos, e compreender esses conceitos é fundamental para compreender a própria linguagem. Na prática, sistemas de software reais são grandes e precisam ser fatorados em partes relativamente independentes para serem viáveis. Como em Java isso é feito com classes e objetos, compreendê-los é imprescindível para escrever qualquer programa significativo.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 23ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos23.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Foi abordado o conceito de linguagem de programação, exemplos de linguagens e seus devidos códigos.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 24ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos24.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >IDEs ajudam os desenvolvedores a programar novas aplicações de forma rápida, já que os vários utilitários não precisam ser ajustados e integrados manualmente durante a configuração
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 25ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos25.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >IDE para se atualizar em relação às ferramentas e fluxos de trabalho da equipe. Na verdade, o objetivo da maior parte das funcionalidades é economizar tempo: o preenchimento inteligente e a geração automática de código, por exemplo, eliminam a necessidade de digitar sequências inteiras.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 26ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos26.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Outras funcionalidades comuns aos IDEs têm o objetivo de ajudar os desenvolvedores a organizar seu fluxo de trabalho e resolver problemas. Os IDEs analisam o código no momento em que está sendo escrito. Assim, bugs causados por erro humano são identificados em tempo real.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 27ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos27.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Foi explicado os fundamentos da IDE (Conjunto de softwares utilizados para construção de programas).
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 28ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos28.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" > Um compilador é diferente de um interpretador, que analisa e executa cada linha de código fonte em sequência, sem olhar para todo o programa.
+            </p>
+            <p>No entanto, os programas produzidos pelos compiladores são muito mais rápidos do que os mesmos programas executados por um interpretador.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 29ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos29.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Codigo fonte: sistema de símbolos utilizado para codificar o programa-fonte.
+            </p>
+            <p>Código Fonte é aquilo que a maioria de nós é capaz de ler e compreender. Mesmo quem não tem conhecimento 
+                algum de programação pode intuir algo ao abrir o código fonte de um programa, página da web, serviço.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 30ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos30.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Pega o codigo fonte e le linha por linha para ver se ter erros e verificar se tem coerencia.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 31ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos31.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >O programa conversor recebe a primeira instrução do programa fonte, confere para ver se está escrita corretamente, converte-a em linguagem de máquina e então ordena ao computador que execute esta instrução.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 32ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos32.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Junção da compilação e interpretação, gerando uma maior agilidade.
+            </p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 33ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos33.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Com a abordagem Hibrida o programa fica mas rapido facilita a manutenção.
+            </p>
+            <p>É facilmente rodado em outra plataforma o programa.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 34ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos34.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Em cada linguagem de programação é o codigo é feito de algum jeito.
+            </p>
+            <p>Algumas linguagens conversam em linguagem de maquinas e outras são de baixo nivel onde você precisa de um compilador para executar o software.</p>
+
+             
+    </div>
+
+    
+</div>
+
+<!-- 35ª div-->
+<div class="row">
+    <div class="col-sm  text-center mt-4">
+        <img src="./img/img_tiposdecompiladores/tipos35.PNG" class="border">
+    </div>
+
+    <div class="col-sm text-justify border mt-4">
+        
+        <p class=" mt-4" >Escolher uma linguagem de programação e a partir dai decidir o que o programa irá fazer.
+            </p>
+            <p>Como é feita a execução desse codigo fontes e alguns exemplos.</p>
+
+             
+    </div>
+
+    
+</div>
+    </section>
+
+
+
+
+
+
+
+    
+
+ 
+
+    </section>
+    <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>links</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5> links</h5>
+              <ul class="list-unstyled quick-links">
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5> links</h5>
+                <ul class="list-unstyled quick-links">
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+                </ul>
+              </div>
+          
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+              <ul class="list-unstyled list-inline social text-center">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+              </ul>
+            </div>
+            </hr>
+          </div>	
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie</p>
+              <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br" target="_blank">World</a></p>
+            </div>
+            </hr>
+          </div>	
+        </div>
+      </section>
+      <!-- ./Footer -->
+
+    
+   
+    <script src="./js/bootstrap.min.js" async defer></script> 
+</body>
+</html>

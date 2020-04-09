@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de compiladores</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <header class="row text-white bg-dark shadow-lg">
+
+    <div class="container p-4">
+
+
+      <div class="col-12 mx-auto text-center">
+        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+
+        <h1>Antonio Jorge</h1>
+        <small>Curso de compiladores</small>
+      </div>
+      <div class="col-12 mx-auto mt-4">
+        <ul class="nav nav-pills nav-justified">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagina1.html">Introdução a Compiladores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
+          </li>
+
+          <ul class="nav nav-pills">
+
+            <li role="presentation" class="dropdown p-2">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                Mas Aulas <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pagina2.html">Análise</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </ul>
+
+      </div>
+    </div>
+  </header>
+
+
+  <section class="container mt-5 bg-light p-4 animated zoomInLeft">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-justify">
+          <h2 class="text-center border-bottom">Codigos Fontes, Objetos e Executaveis</h2>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <img src="./img/tipos_de_codigos.PNG" alt="">
+        </div>
+
+        <div class="col-8 text-justify">
+          <h4 class="mt-4 p-2">Código Fonte</h4>
+          <p class="mt-2 p-2 text-justify">
+            É o conjunto de códigos escritos que fazem qualquer
+            programa, sistema ou serviço funcionar, da web ao
+            desktop, dos aplicativos de smartphone aos complexos
+            algoritmos de Inteligência Artificial que um dia poderão
+            governar esse mundo.
+          </p>
+          <p class="mt-2 p-2 text-justify">
+            Não importa se foram escritas
+            em Java, PHP, Swift, .NET, Kotlin ou Ruby: essas linhas que
+            podem ser apenas um punhado ou se estenderem por
+            milhões e milhões delas são a base, são a fonte de tudo que
+            existe em informática. Incluindo essa página na internet.
+            Incluindo esse navegador que você está utilizando para ler
+            essa página. Incluindo esse sistema operacional que
+            permite que esse navegador funcione. Tudo tem seu código
+            fonte.
+          </p>
+          <p class="mt-2 p-2 text-justify">
+            Essa fonte encapsula as instruções para que um
+            programa funcione, incluindo aí suas variáveis,
+            funções, iterações, exceções, coleta de erros e tudo
+            necessário para que a lógica seja respeitada e a
+            máquina execute aquilo que se pede.
+          </p>
+        </div>
+        <div class="col-4 text-justify">
+          <img src="./img/código-fonte.jpg" style="width: 100%;height: 77%; margin-top: 22%;">
+
+        </div>
+
+      </div>
+      <div class="row mt-4">
+
+        <div class="col-4 text-justify ">
+          <img src="./img/codigo-objeto.jpg" style="width: 100%;height: 77%; margin-top: 22%;">
+
+        </div>
+        <div class="col-8 text-justify mt-4 ">
+          <h4 class="mt-4 p-2 border-bottom">Código Objeto</h4>
+          <p class="mt-2 p-2 text-justify">
+            Em computação, código objeto ou módulo objeto é o produto de um compilador.
+            No geral código objeto é uma sequência de comandos ou instruções
+            em uma linguagem de computador, geralmente numa linguagem código de máquina
+            (binária) ou uma linguagem intermediária, como register transfer language (RTL).
+            O termo indica que o código é o objetivo ou resultado do processo de compilação,
+            com algumas fontes iniciais referindo-se ao código fonte como um "programa sujeito".
+          </p>
+          <p class="mt-2 p-2 text-justify">
+            Quando o Código Fonte é compilado, ele se torna Código Objeto,
+            um módulo de composição também chamado de código de máquina.
+          </p>
+          <strong class="mt-2 p-2 text-justify">
+            Então o codigo objeto
+            Só é criado quando não há erros no código-fonte.
+          </strong>
+
+        </div>
+        <div class="row mt-4">
+
+
+          <div class="col-12 text-center mt-4 ">
+            <h4 class="mt-4 p-2 border-bottom">Código Executável</h4>
+            <p class="mt-2 p-2 text-justify">
+              A união de todos os códigos objeto que compõem um projeto se
+              torna o Código Executável, aquilo que será carregado em memória
+              pelo sistema operacional e, como o próprio nome diz, será “executado”
+            </p>
+            <p class="mt-2 p-2 text-justify">
+              Para aqueles que ainda desconhecem em relação a linguagem de programação é que exitem milhares de milhares
+              de linguagens diversificadas de maneira que o seu aprendizado exija muito tempo de estudo e dedicação.
+
+              Esta mesma linguagem de programação tem como base melhor desenvolver as habilidades de seus profissionais
+              e é claro através dela analisar possíveis erros dento de um mesmo código.
+
+              Para melhor entender o Código-Fonte é o responsável por realizar a conversão do código fonte assim como a
+              imagem a cima demonstra.
+
+              Esta conversão somente poderá ser realizada após o código-fonte ser transformado em linguagem de máquinas
+              e após isso o mesmo será gerado pelo compilador.
+
+              Somente poderão ser realizados e completos os códigos que não possuem nenhum erro sequer, afinal os erros
+              fazem com que a transformação através da compilação fique errada, ou seja não de certo.
+            </p>
+
+          </div>
+        </div>
+        <div class="row mt-4">
+
+
+          <div class="col-6">
+            <img src="./img/codigo-executavel.jpeg" style="width: 100%;margin-top: 8px;">
+
+          </div>
+          <div class="col-6">
+            <p>
+              Essa é uma visão bem simplificada do processo e muita gente
+              costuma afirmar que Código Fonte e Código Objeto são o “antes”
+              e o “depois” de programas de computador. Essa distinção, entretanto,
+              não se aplica com linguagens de script, quando existe somente uma forma de código.
+            </p>
+
+          </div>
+        </div>
+        <div class="row mt-4 ">
+          <div class="col-12 text-center " style="margin-top: 58px;">
+            <h4 class="border-bottom"> Código Fonte x Código Objeto x Código Executável</h4>
+            <p class="text-justify mt-4 p-2">
+              Então, Código Fonte é aquilo que a maioria de nós é capaz de ler e compreender. Mesmo quem não tem
+              conhecimento algum de programação pode intuir algo ao abrir o código fonte de um programa, página da web,
+              serviço. Não por acaso, essa foi a escolha do nome para o nosso site: Código Fonte, informação sobre
+              tecnologia fácil de assimilar.
+            </p>
+            <p class="text-justify mt-4 p-2">Quando o Código Fonte é compilado, ele se torna Código Objeto, um módulo de composição também chamado de
+              código de máquina.</p>
+            <p class="text-justify mt-4 p-2">A união de todos os códigos objeto que compõem um projeto se torna o Código Executável, aquilo que será
+              carregado em memória pelo sistema operacional e, como o próprio nome diz, será “executado”</p>
+          </div>
+        </div>
+
+
+
+      </div>
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie
+          </p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br"
+              target="_blank">World</a></p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+  <!-- ./Footer -->
+
+
+
+  <script src="./js/bootstrap.min.js" async defer></script>
+</body>
+
+</html>
