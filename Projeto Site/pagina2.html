@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
 
 
 </head>
@@ -234,74 +234,73 @@
         </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h5 class="text-center border-bottom p-2 mb-3">Visão geral</h5>
-            <p>
-              A sintaxe é a parte da gramática que estuda a disposição das palavras na frase e das frases em um
-              discurso. Essa etapa no processo de compilação deve reconhecer as forma do programa fonte e determinar se
-              ele é valido ou não.
-            </p>
-            <p>
-              Esse modelo pode ser definido utilizando gramáticas livres de contexto que representam uma gramática
-              formal e pode ser escrita através de algoritmos fazem a derivação de todas as possíveis construções da
-              linguagem.
-            </p>
 
-            <li class="mt-2">Símbolo: são os elementos mínimos que compõe uma linguagem. Na linguagem humana são as
-              letras.</li>
-            <li class="mt-2">Sentença: É um conjunto ordenado de símbolos que forma uma cadeia ou string. Na linguagem
-              humana são as palavras.</li>
-            <li class="mt-2">Alfabeto: É um conjunto de símbolos. Na linguagem humana é o conjunto de letras {a, b, c,
-              d, ...}</li>
-            <li class="mt-2">Linguagem: É o conjunto de sentenças, Na linguagem humana são os conjuntos de palavras
-              {compiladores, linguagem, ...}</li>
-            <li class="mt-2">Gramática: É uma forma de representar as regras para formação de uma linguagem.</li>
-            <img src="./img/semantica1.PNG" class="mt-3" style="width: 105%;">
-            <p class="mt-4 text-justify">Observe a estrutura sintática de uma linguagem de programação. Temos as
-              divisões dos blocos, compostos por comandos, compostos por expressões.</p>
-            <img src="./img/semantica2.PNG" style="margin-left: -21px;">
-            <p>Entende-se por regras gramáticas as formas como podemos descrever a estrutura sintática do programa.
-              Veja um exemplo no diagrama abaixo demostrando esse processo de compilação visto das etapas estudadas até
-              o momento.</p>
-          </div>
-          <div class="col-6">
-            <h5 class="text-center border-bottom p-2 mb-3">Gramática Livre de Contexto - GLC</h5>
-            <p>
-              As linguagens de programação em geral pertencem a uma categoria chamada de Linguagens Livres de Contexto.
-              Umas das formas de representar essas linguagens é através de Gramáticas Livres de Contexto que são a base
-              para a construção de analisadores sintáticos. Elas são utilizadas para especificar as regras sintáticas de
-              uma linguagem de programação, uma linguagem regular pode ser reconhecida por uma automato finitos
-              determinísticos e não determinísticos, já uma Gramatica Livre de Contexto pode ser reconhecida por um
-              automato de pilha. </p>
-            <p>
-              Outra aplicação de GLC são os DTD - Definição de Tipos de Documentos - utilizados por arquivos XML que
-              descreve as tags de uma forma natural, as tags deve estar aninhas afim de lidar com o significado do
-              texto. </p>
+    <div class="row">
+      <div class="col-6">
+        <h5 class="text-center border-bottom p-2 mb-3">Visão geral</h5>
+        <p>
+          A sintaxe é a parte da gramática que estuda a disposição das palavras na frase e das frases em um
+          discurso. Essa etapa no processo de compilação deve reconhecer as forma do programa fonte e determinar se
+          ele é valido ou não.
+        </p>
+        <p>
+          Esse modelo pode ser definido utilizando gramáticas livres de contexto que representam uma gramática
+          formal e pode ser escrita através de algoritmos fazem a derivação de todas as possíveis construções da
+          linguagem.
+        </p>
 
-            <li class="mt-2">Símbolos terminais: Conjunto finito de símbolos básicos que formam as palavras da
-              linguagens, são representadas pelo tokens reconhecidos pelo analisador lexico.</li>
-            <li class="mt-2">Símbolos não terminais: Conjunto finito de variáveis utilizadas para representar os
-              conjuntos da linguagem, são formadas pelos terminas e pelos próprios símbolos não terminais.</li>
-            <li class="mt-2">Símbolo inicial: É a variável, simbolo não terminal, que representa o inicio da definição
-              da linguagem.</li>
-            <li class="mt-2">Regras de produções: Representa um conjunto de regras sintáticas que representam a
-              definição da linguagem, indicam como símbolos terminais e não terminais podem ser combinados.</li>
+        <li class="mt-2">Símbolo: são os elementos mínimos que compõe uma linguagem. Na linguagem humana são as
+          letras.</li>
+        <li class="mt-2">Sentença: É um conjunto ordenado de símbolos que forma uma cadeia ou string. Na linguagem
+          humana são as palavras.</li>
+        <li class="mt-2">Alfabeto: É um conjunto de símbolos. Na linguagem humana é o conjunto de letras {a, b, c,
+          d, ...}</li>
+        <li class="mt-2">Linguagem: É o conjunto de sentenças, Na linguagem humana são os conjuntos de palavras
+          {compiladores, linguagem, ...}</li>
+        <li class="mt-2">Gramática: É uma forma de representar as regras para formação de uma linguagem.</li>
+        <img src="./img/semantica1.PNG" class="mt-3" style="width: 105%;">
+        <p class="mt-4 text-justify">Observe a estrutura sintática de uma linguagem de programação. Temos as
+          divisões dos blocos, compostos por comandos, compostos por expressões.</p>
+        <img src="./img/semantica2.PNG" style="margin-left: -21px;">
+        <p>Entende-se por regras gramáticas as formas como podemos descrever a estrutura sintática do programa.
+          Veja um exemplo no diagrama abaixo demostrando esse processo de compilação visto das etapas estudadas até
+          o momento.</p>
+      </div>
+      <div class="col-6">
+        <h5 class="text-center border-bottom p-2 mb-3">Gramática Livre de Contexto - GLC</h5>
+        <p>
+          As linguagens de programação em geral pertencem a uma categoria chamada de Linguagens Livres de Contexto.
+          Umas das formas de representar essas linguagens é através de Gramáticas Livres de Contexto que são a base
+          para a construção de analisadores sintáticos. Elas são utilizadas para especificar as regras sintáticas de
+          uma linguagem de programação, uma linguagem regular pode ser reconhecida por uma automato finitos
+          determinísticos e não determinísticos, já uma Gramatica Livre de Contexto pode ser reconhecida por um
+          automato de pilha. </p>
+        <p>
+          Outra aplicação de GLC são os DTD - Definição de Tipos de Documentos - utilizados por arquivos XML que
+          descreve as tags de uma forma natural, as tags deve estar aninhas afim de lidar com o significado do
+          texto. </p>
 
-            <p>
-              Já o analisador sintático vê o mesmo texto como uma sequência de sentenças que deve satisfazer as regras
-              gramaticais. É através da gramática que podemos validar expressões criadas na linguagem de programação.
-            </p>
-            <small class="mt-4">Onde:</small>
-            <li class="mt-4">A é uma variável - simbolo não terminal.</li>
-            <li class="mt-4">-> simbolo de produção .</li>
-            <li class="mt-4">α é a combinação símbolos terminais e não terminais que representam a forma como uma string
-              vai ser formada.</li>
+        <li class="mt-2">Símbolos terminais: Conjunto finito de símbolos básicos que formam as palavras da
+          linguagens, são representadas pelo tokens reconhecidos pelo analisador lexico.</li>
+        <li class="mt-2">Símbolos não terminais: Conjunto finito de variáveis utilizadas para representar os
+          conjuntos da linguagem, são formadas pelos terminas e pelos próprios símbolos não terminais.</li>
+        <li class="mt-2">Símbolo inicial: É a variável, simbolo não terminal, que representa o inicio da definição
+          da linguagem.</li>
+        <li class="mt-2">Regras de produções: Representa um conjunto de regras sintáticas que representam a
+          definição da linguagem, indicam como símbolos terminais e não terminais podem ser combinados.</li>
 
-            <small class="mt-4">Veja o exemplo de uma Gramatica Livre de Contexto.</small><br>
-            <code class="mt-4"><br>
+        <p>
+          Já o analisador sintático vê o mesmo texto como uma sequência de sentenças que deve satisfazer as regras
+          gramaticais. É através da gramática que podemos validar expressões criadas na linguagem de programação.
+        </p>
+        <small class="mt-4">Onde:</small>
+        <li class="mt-4">A é uma variável - simbolo não terminal.</li>
+        <li class="mt-4">-> simbolo de produção .</li>
+        <li class="mt-4">α é a combinação símbolos terminais e não terminais que representam a forma como uma string
+          vai ser formada.</li>
+
+        <small class="mt-4">Veja o exemplo de uma Gramatica Livre de Contexto.</small><br>
+        <code class="mt-4"><br>
                   G = ({S}, {a, b}, P, S) <br>
 
                   P = {  <br> 
@@ -310,14 +309,14 @@
                  }<br>
                 </code><br>
 
-            <strong class="mt-4">Essa gramatica é formada pelas terminais a e b, que são os tokens da linguagem, como
-              regras de produção nos temos aSb que obriga ter um a e b nas extremidades da palavras, o simbolo λ que
-              significa vazio.</strong>
+        <strong class="mt-4">Essa gramatica é formada pelas terminais a e b, que são os tokens da linguagem, como
+          regras de produção nos temos aSb que obriga ter um a e b nas extremidades da palavras, o simbolo λ que
+          significa vazio.</strong>
 
-            <img src="./img/semantica3.PNG" style="margin-top: 100px;">
-          </div>
-        </div>
-    </section>
+        <img src="./img/semantica3.PNG" style="margin-top: 100px;">
+      </div>
+
+
 
 
 
