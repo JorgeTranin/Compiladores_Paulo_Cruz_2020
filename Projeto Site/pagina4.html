@@ -1,235 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de compiladores</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de compiladores</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
 
-    
+
 </head>
+
 <body>
-  <header class="row text-white bg-dark shadow-lg">
+  <div class="col-12 mx-auto text-center text-white bg-dark ">
+    <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
 
-    <div class="container p-4">
+    <h1>Antonio Jorge</h1>
+    <small>Curso de compiladores</small>
 
 
-      <div class="col-12 mx-auto text-center">
-        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand text-center " href="./index.html">Inicio</a>
+        <button class="navbar-toggler navbar-light bg-light " type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-        <h1>Antonio Jorge</h1>
-        <small>Curso de compiladores</small>
-      </div>
-      <div class="col-12 mx-auto mt-4">
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html.html">Introdução a Compiladores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
-          </li>
-
-          <ul class="nav nav-pills">
-
-            <li role="presentation" class="dropdown p-2">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                Mas Aulas <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina7.html">Parte 1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte2.html">Parte 2</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte3.html">Parte 3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte4.html">Parte 4</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte5.html">Parte 5</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte6.html">Parte 6</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte7.html">Parte 7</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="desafio.html">Desafio</a>
-              </li>
-              </ul>
+            <li class="nav-item h6 mb-0 ml-2 mr-2 ">
+              <a class="nav-link active" href="pagina1.html">Introdução a Compiladores</a><span
+                class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina3.html">Tipos De Compiladores</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+            </li>
+            <li class="nav-item dropdown h6 mb-0 ml-4 ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Mais aulas
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                <a class="nav-link" href="pagina7.html">Parte 1</a>
+                <a class="nav-link" href="parte2.html">Parte 2</a>
+                <a class="nav-link" href="parte3.html">Parte 3</a>
+                <a class="nav-link" href="parte4.html">Parte 4</a>
+                <a class="nav-link" href="parte5.html">Parte 5</a>
+                <a class="nav-link" href="parte6.html">Parte 6</a>
+                <a class="nav-link" href="parte7.html">Parte 7</a>
+                <a class="nav-link" href="desafio.html">Desafio</a>
 
+              </div>
+            </li>
           </ul>
-        </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <section class="container mt-5 animated zoomInLeft text-justify">
+    <div class="row">
+      <div class="col-12 mt-4">
+        <h2 class="text-center ">Exercício Processo de Compilação em Java</h2>
 
       </div>
     </div>
-  </header>
+    <div class="row">
+      <div class="col-12 p-4 text-center">
+        <h3 class="border-bottom p-2 mb-3">Introdução</h3>
+        <p class="text-justify mt-3 mb-4">Um programa Java segue uma linha tradicional de tradução e execução, assim
+          como a linguagem C também faz. No entanto, Java foi inventado com objetivos diferentes como: funcionar o mais
+          rapidamente possível e em qualquer plataforma, mesmo que para isso tenhamos um declínio no tempo de execução.
+        </p>
+        <small class="mt-4">Processo de tradução e execução dos programas Java.</small><br>
+        <img src="./img/Execucao_Programas_Java1.jpg" alt=""><br>
 
-    <section class="container mt-5 animated zoomInLeft text-justify">
-      <div class="row">
-        <div class="col-12 mt-4">
-          <h2 class="text-center ">Exercício Processo de Compilação em Java</h2>
+        <p class="text-justify mb-2">
+          No Java temos que ao invés de compilar para a linguagem de montagem assembly de um computador destino,
+          tem-se uma compilação para instruções fáceis de interpretar: bytecode Java. Esse conjunto de instruções
+          é muito próximo da linguagem Java. Assim essa etapa de compilação torna-se um tanto trivial,
+          de forma que não se tem nem mesmo uma fase de otimização que normalmente é feita por qualquer compilador.
+          Todos os programas Java são distribuídos na forma binária desses bytecodes. Portanto, o bytecode é um formato
+          de código intermediário entre o código fonte escrito pelo programador em linguagem Java e o código de máquina
+          que o computador consegue executar.
+        </p>
 
-        </div>
       </div>
-        <div class="row">
-          <div class="col-12 p-4 text-center">
-            <h3 class="border-bottom p-2 mb-3">Introdução</h3>
-            <p class="text-justify mt-3 mb-4">Um programa Java segue uma linha tradicional de tradução e execução, assim como a linguagem C também faz. No entanto, Java foi inventado com objetivos diferentes como: funcionar o mais rapidamente possível e em qualquer plataforma, mesmo que para isso tenhamos um declínio no tempo de execução.</p>
-            <small class="mt-4">Processo de tradução e execução dos programas Java.</small><br>
-            <img src="./img/Execucao_Programas_Java1.jpg" alt=""><br>
+    </div>
 
-            <p class="text-justify mb-2" >
-                No Java temos que ao invés de compilar para a linguagem de montagem assembly de um computador destino,
-                 tem-se uma compilação para instruções fáceis de interpretar: bytecode Java. Esse conjunto de instruções
-                  é muito próximo da linguagem Java. Assim essa etapa de compilação torna-se um tanto trivial,
-                   de forma que não se tem nem mesmo uma fase de otimização que normalmente é feita por qualquer compilador.
-                    Todos os programas Java são distribuídos na forma binária desses bytecodes. Portanto, o bytecode é um formato
-                     de código intermediário entre o código fonte escrito pelo programador em linguagem Java e o código de máquina
-                      que o computador consegue executar.
-            </p>
-        
-          </div>
+
+
+    <div class="row">
+      <div class="col-12 p-4 mt-4 text-justify">
+        <h3 class="border-bottom p-2 mb-3 text-center">Compiladores Just-In-Time (JIT)</h3>
+        <p>
+          Compiladores Just-In-Time foram o próximo passo no desenvolvimento do Java. Compiladores Just-In-time são
+          compiladores que traduziam enquanto o programa estava sendo executado. Esses compiladores nada mais fazem
+          do que traçar o perfil do programa em execução para descobrir onde estão os métodos principais do programa,
+          e depois os compilam para o conjunto de instruções nativo em que a máquina virtual está executando. A parte
+          compilada é salva para a próxima vez em que o programa for executado, de modo que a execução possa ser feita
+          mais rapidamente da próxima vez em que ele for executado.
+        </p>
+        <p>
+          Este equilíbrio entre interpretação e compilação evoluiu bastante com o passar do tempo, de modo que os
+          programas Java executados com frequência sofrem pouquíssimo trabalho extra da interpretação.
+        </p>
+        <strong>Conclusão</strong>
+        <small class="mt-4">
+          Um programas Java é primeiro compilado para uma versão binária dos bytecodes Java
+          e que após isso ele está pronto para ser executado no interpretador Java Virtual
+          Machine (JVM). A JVM por sua vez link-edita os métodos desejados na biblioteca Java
+          enquanto o programa está sendo executado. No entanto, também vimos que para conseguirmos
+          um melhor desempenho, a JVM pode chamar o compilador Just-In-Time (JIT), que compila métodos
+          seletivamente para a linguagem nativa da máquina em que está executando.
+        </small>
+
+      </div>
+    </div>
+
+
+    <div class="row p-4">
+      <div class="col-6">
+        <img src="./img/Programa em java.png" class="img-fluid compiladores-img">
+      </div>
+      <div class="col-6 mt-4 text-justify">
+        <h4 style="text-align:center" class="border-bottom p-2 mb-3 ">Fases de compilação </h4>
+        <li>O programa é criando em um editor e armazenado em disco em um arquivo cujo nome termina com .java.</li>
+        <li>O Compilador cria bytecodes e os armazena em disco em um arquivo cujo nome termina com .class</li>
+        <li>O carregador de classe lê os arquivos .class que contem bytecodes a partir do disco e coloca esses
+          bytescodes na memoria.</li>
+        <li>O verificador de bytecodes confirma que todos os bytes são validos e não violam restrições de segurança do
+          java.</li>
+        <li class="mb-3">Para executar o programa , a jvm le os bytecodes e os compila(isto é,traduz)no momento certo
+          (ou Just-in-time - JIT)para uma linguagem que o computador possa entender.</li>
+      </div>
+    </div>
+
+
+  </section>
+
+
+
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
         </div>
-        
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
+          </ul>
+        </div>
 
-        
-            <div class="row">
-              <div class="col-12 p-4 mt-4 text-justify">
-               <h3 class="border-bottom p-2 mb-3 text-center">Compiladores Just-In-Time (JIT)</h3>
-               <p>
-                Compiladores Just-In-Time foram o próximo passo no desenvolvimento do Java. Compiladores Just-In-time são
-                 compiladores que traduziam enquanto o programa estava sendo executado. Esses compiladores nada mais fazem
-                  do que traçar o perfil do programa em execução para descobrir onde estão os métodos principais do programa,
-                   e depois os compilam para o conjunto de instruções nativo em que a máquina virtual está executando. A parte
-                    compilada é salva para a próxima vez em que o programa for executado, de modo que a execução possa ser feita
-                     mais rapidamente da próxima vez em que ele for executado.
-               </p>
-               <p>
-                Este equilíbrio entre interpretação e compilação evoluiu bastante com o passar do tempo, de modo que os programas Java executados com frequência sofrem pouquíssimo trabalho extra da interpretação.
-               </p>
-               <strong>Conclusão</strong>
-                <small class="mt-4">
-                    Um programas Java é primeiro compilado para uma versão binária dos bytecodes Java
-                    e que após isso ele está pronto para ser executado no interpretador Java Virtual
-                    Machine (JVM). A JVM por sua vez link-edita os métodos desejados na biblioteca Java
-                    enquanto o programa está sendo executado. No entanto, também vimos que para conseguirmos
-                    um melhor desempenho, a JVM pode chamar o compilador Just-In-Time (JIT), que compila métodos
-                    seletivamente para a linguagem nativa da máquina em que está executando.
-                </small>
-
-              </div>
-            </div>      
-
-        
-            <div class="row p-4">
-                <div class="col-6">
-                  <img src="./img/Programa em java.png" class="img-fluid compiladores-img">
-                </div>
-                <div class="col-6 mt-4 text-justify">
-                  <h4 style="text-align:center" class="border-bottom p-2 mb-3 ">Fases de compilação </h4>
-                  <li>O programa é criando em um editor e armazenado em disco em um arquivo cujo nome termina com .java.</li>
-                  <li>O Compilador cria bytecodes e os armazena em disco em um arquivo cujo nome termina com .class</li>
-                  <li>O carregador de classe lê os arquivos .class que contem bytecodes a partir do disco e coloca esses bytescodes na memoria.</li>
-                  <li>O verificador de bytecodes confirma que todos os bytes são validos e não violam restrições de segurança do java.</li>
-                  <li class="mb-3">Para executar o programa , a jvm le os bytecodes e os compila(isto é,traduz)no momento certo (ou Just-in-time - JIT)para uma linguagem que o computador possa entender.</li>                  
-                </div>
-              </div>
-        
-
-        </section>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        </hr>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie
+          </p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br"
+              target="_blank">World</a></p>
+        </div>
+        </hr>
+      </div>
+    </div>
+  </section>
+  <!-- ./Footer -->
 
 
 
-      </section>
-      <section id="footer">
-          <div class="container">
-            <div class="row text-center text-xs-center text-sm-left text-md-left">
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5>links</h5>
-                <ul class="list-unstyled quick-links">
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                <h5>links</h5>
-                <ul class="list-unstyled quick-links">
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
-                  <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
-                </ul>
-              </div>
-              <div class="col-xs-12 col-sm-4 col-md-4">
-                  <h5>links</h5>
-                  <ul class="list-unstyled quick-links">
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>videos</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>contato</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Telefones</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email</a></li>
-                  </ul>
-                </div>
-            
-            </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                <ul class="list-unstyled list-inline social text-center">
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-                  <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                </ul>
-              </div>
-              </hr>
-            </div>	
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p><u><a href="https://www.google.com">Aluno Na faculdade UNIBTA</a></u> Pertence a Antonio Jorge não copie</p>
-                <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.unibta.com.br" target="_blank">World</a></p>
-              </div>
-              </hr>
-            </div>	
-          </div>
-        </section>
-        <!-- ./Footer -->
-
-    
-   
-    <script src="./js/bootstrap.min.js" async defer></script> 
+  <script src="./js/bootstrap.min.js" async defer></script>
 </body>
+
 </html>

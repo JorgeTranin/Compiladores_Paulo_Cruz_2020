@@ -18,83 +18,60 @@
 
 
 <body>
-  <header class="row text-white bg-dark shadow-lg">
+  <div class="col-12 mx-auto text-center text-white bg-dark ">
+    <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
 
-    <div class="container p-4">
+    <h1>Antonio Jorge</h1>
+    <small>Curso de compiladores</small>
 
 
-      <div class="col-12 mx-auto text-center">
-        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand text-center " href="./index.html">Inicio</a>
+        <button class="navbar-toggler navbar-light bg-light " type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-        <h1>Antonio Jorge</h1>
-        <small>Curso de compiladores</small>
-      </div>
-      <div class="col-12 mx-auto mt-4">
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html.html">Introdução a Compiladores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
-          </li>
-
-          <ul class="nav nav-pills">
-
-            <li role="presentation" class="dropdown p-2">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                Mas Aulas <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina7.html">Parte 1</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte2.html">Parte 2</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte3.html">Parte 3</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte4.html">Parte 4</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte5.html">Parte 5</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte6.html">Parte 6</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="parte7.html">Parte 7</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="desafio.html">Desafio</a>
-              </li>
-              </ul>
+            <li class="nav-item h6 mb-0 ml-2 mr-2 ">
+              <a class="nav-link active" href="pagina1.html">Introdução a Compiladores</a><span
+                class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina3.html">Tipos De Compiladores</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+            </li>
+            <li class="nav-item dropdown h6 mb-0 ml-4 ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Mais aulas
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                <a class="nav-link" href="pagina7.html">Parte 1</a>
+                <a class="nav-link" href="parte2.html">Parte 2</a>
+                <a class="nav-link" href="parte3.html">Parte 3</a>
+                <a class="nav-link" href="parte4.html">Parte 4</a>
+                <a class="nav-link" href="parte5.html">Parte 5</a>
+                <a class="nav-link" href="parte6.html">Parte 6</a>
+                <a class="nav-link" href="parte7.html">Parte 7</a>
+                <a class="nav-link" href="desafio.html">Desafio</a>
 
+              </div>
+            </li>
           </ul>
-        </ul>
-
+        </div>
       </div>
-    </div>
-  </header>
-
+    </nav>
+  </div>
 
 
   <section class="container mt-5 p-2 animated zoomInLeft">
@@ -210,11 +187,13 @@
         </li>
         <li class="text-justify mt-2 p-2">Copia as instruções e os dados do arquivo executável para a memória;</li>
         <li class="text-justify mt-2 p-2">Caso exista, copia os parâmetros do programa principal para a pilha;</li>
-        <li class="text-justify mt-2 p-2">Inicializa os registradores da máquina e define o stack pointer para o primeiro local livre;</li>
-        <li class="text-justify mt-2 p-2">Desvia para uma rotina de partida, que copia os parâmetros para os registradores de argumentos e chama a
+        <li class="text-justify mt-2 p-2">Inicializa os registradores da máquina e define o stack pointer para o
+          primeiro local livre;</li>
+        <li class="text-justify mt-2 p-2">Desvia para uma rotina de partida, que copia os parâmetros para os
+          registradores de argumentos e chama a
           rotina principal do programa. Quando a rotina principal retorna, a rotina de partida termina o programa com
           uma chamada ao sistema exit.</li>
-        
+
 
       </div>
     </div>

@@ -18,82 +18,227 @@
 
 
 <body>
-    <header class="row text-white bg-dark shadow-lg">
-        <div class="container p-4">
-            <div class="col-12 mx-auto text-center">
-                <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+    <div class="col-12 mx-auto text-center text-white bg-dark ">
+        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
 
-                <h1>Antonio Jorge</h1>
-                <small>Curso de compiladores</small>
-            </div>
-            <div class="col-12 mx-auto mt-4">
-                <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html.html">Introdução a Compiladores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
-                    </li>
+        <h1>Antonio Jorge</h1>
+        <small>Curso de compiladores</small>
 
-                    <ul class="nav nav-pills">
 
-                        <li role="presentation" class="dropdown p-2">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">
-                                Mas Aulas <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="pagina7.html">Parte 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte2.html">Parte 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte3.html">Parte 3</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte4.html">Parte 4</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte5.html">Parte 5</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte6.html">Parte 6</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="parte7.html">Parte 7</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="desafio.html">Desafio</a>
-                                </li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand text-center " href="./index.html">Inicio</a>
+                <button class="navbar-toggler navbar-light bg-light " type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item h6 mb-0 ml-2 mr-2 ">
+                            <a class="nav-link active" href="pagina1.html">Introdução a Compiladores</a><span
+                                class="sr-only">(current)</span></a>
                         </li>
+                        <li class="nav-item h6 mb-0 ml-2 mr-2">
+                            <a class="nav-link" href="pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+                        </li>
+                        <li class="nav-item h6 mb-0 ml-2 mr-2">
+                            <a class="nav-link" href="pagina3.html">Tipos De Compiladores</a>
+                        </li>
+                        <li class="nav-item h6 mb-0 ml-2 mr-2">
+                            <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+                        </li>
+                        <li class="nav-item dropdown h6 mb-0 ml-4 ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Mais aulas
+                            </a>
+                            <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                                <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                                <a class="nav-link" href="pagina7.html">Parte 1</a>
+                                <a class="nav-link" href="parte2.html">Parte 2</a>
+                                <a class="nav-link" href="parte3.html">Parte 3</a>
+                                <a class="nav-link" href="parte4.html">Parte 4</a>
+                                <a class="nav-link" href="parte5.html">Parte 5</a>
+                                <a class="nav-link" href="parte6.html">Parte 6</a>
+                                <a class="nav-link" href="parte7.html">Parte 7</a>
+                                <a class="nav-link" href="desafio.html">Desafio</a>
 
+                            </div>
+                        </li>
                     </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="container mt-5 animated zoomInLeft">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="border-bottom">Conceitos de Análise Sintática e Análise Sintática Descendente</h3>
+            </div>
+        </div>
+
+        <h6 class="mt-4 mb-4">O que é possível fazer genericamente com a Análise sintática:</h6>
+
+
+        <div class="row">
+            <div class="col-5 text-justify ">
+                <p>Tem a função de combinar a lista de Tokens criando uma Árvore sintática. E ela deve rejeitar todos os
+                    Tokens inválidos.</p>
+                <p>
+                    A análise sintática é mais complexa que a Léxica. Pois precisamos de uma linguagem mais avançada.
+                </p>
+                <strong>Abaixo encontra-se suas características principais.</strong>
+
+                <ul class="mt-4 p-2 text-justify">
+                    <li>
+                        São linguagens livre de contexto, constituem um conjunto de linguagens que podem ser geradas por
+                        gramáticas livres de contexto (GLC), reconhecidas por autômatos de pilha. As linguagens são
+                        projetadas a partir da GLC.
+                    </li>
+                    <li class="mt-2">
+                        Se uma cadeia de átomos (tokens), isto é, o programa já analisado pelo analisador léxico, pode
+                        ser gerado por uma gramática.
+                    </li>
+                    <li class="mt-2">
+                        Seu objetivo é a construção da árvore sintática ou apenas a decisão se a cadeia fornecida é ou
+                        não uma sentença da gramática que define a linguagem.
+                    </li>
+                    <li class="mt-2">
+                        Definição baseada em derivação para uma linguagem gerada por uma GLC. Dado uma linguagem
+                        qualquer definimos os terminais e os produtores e a partir disso definimos a linguagem.
+                    </li>
+                </ul>
+            </div>
+            <div class="col-7 " style="margin-top: -58px;">
+                <img src="./img/Análise_Sintática_arvore_sintatica.jpg" alt="">
+
+                <iframe class="mt-4 ml-4" width="560" height="315" src="https://www.youtube.com/embed/JQ92w5oDyb0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center border-bottom">
+                <h4>Derivações</h4>
+            </div>
+        </div>
+        <div class="row">
+            <di class="col-6 mt-4 text-justify">
+                <p>
+                    A derivação é a substituição do conjunto de símbolos não terminais por símbolos terminais começando
+                    pelo símbolo inicial, ao final desse processo o resultado é a forma como a linguagem deve assumir.
+                </p>
+                <p>
+                    Durante a derivação devemos aplicar as regras de produção para substituir cada símbolo não terminal
+                    por um símbolo terminal, isso permite identificar se certas cadeias de caracteres pertence a
+                    linguagem, as regras expandem todas as produções possíveis. Como resultado desse processo temos a
+                    árvore de derivação.
+                </p>
+
+                <img src="./img/Tipos_de_Derivação.png" alt="" class="mb-3">
+                <small class="mt-4">
+                    Independente do algoritmo utilizado a derivação deve produzir o mesmo resultado, ou seja, a mesma
+                    árvore de derivação, caso o resultado seja diferente temos uma ambiguidade.
+                </small>
+
+            </di>
+            <div class="col-6">
+                <h6 class="mt-4 mb-1">Tipos de derivação:</h6>
+                <ul class=" p-2 tex t-justify">
+                    <li class="mt-2 p-2">
+                        Top-Down:Examina os símbolos terminais da esquerda para a direita - forma a árvore sintatica de
+                        cima para baixo.
+                    </li>
+                    <li class="mt-2 p-2">
+                        L(eft-to-right) L(eft-most-derivation) => LL
+                    </li>
+                    <li class="mt-2 p-2">
+                        Bottom-Up: Examina os símbolos terminais da direita para a esquerda - forma a árvore sintatica
+                        de baixo para cima
+                    </li>
+                    <li class="mt-2 p-2">S(imple) L(eft-to-right) R(ight-most-derivation) => SLR</li>
+                    <li class="mt-2 p-2">L(eft-to-right) R(ight-most-derivation) => LR</li>
+                    <li class="mt-2 p-2">
+                        L(ook) A(head) L(eft-to-right) R(ight-most-derivation) => LALR
+                    </li>
                 </ul>
 
             </div>
         </div>
-    </header>
+        <div class="row">
+            <div class="col-12 border-bottom mt-4 text-center">
+                <h4>Árvore Sintática</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 mt-4">
+                <img src="./img/Arvore_sintatica2.PNG" alt="">
+
+                <cite>
+                    A raiz da arvore de derivação é sempre o símbolo inicial,
+                    os vértices interiores são os símbolos não terminais,
+                    os símbolos terminais são as folhas.
+                </cite>
+            </div>
+            <div class="col-6 mt-4 ">
+                <ul class="p-2">
+                    <li class="mt-2 p-2">As arvores podem ser representadas a partir de um símbolo inicial.</li>
+                    <li class="mt-2 p-2">As folhas devem conter somente símbolos terminais.</li>
+                    <li class="mt-2 p-2">Lendo as folhas da esquerda para a direita temos a palavra derivada</li>
+                    <li class="mt-2 p-2">Produtores que levam ao vazio também devem ser representadas.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="border-bottom mt-4">Conceito de análise sintática descendente</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mt-4 text-justify">
+                <p class="p-2 mt-2">
+                    também chamada de top-down: a árvore de derivação correspondente a x é construída de cima para baixo,
+                    da raiz (o símbolo inicial S) para as folhas, onde se encontra x. Nesse tipo de análise, é preciso
+                    decidir qual regra A→β será aplicada a um nó rotulado por um não-terminal A. A expansão de A é feita
+                    criando nós filhos rotulados com os símbolos de β.
+                </p>
+                <p class="p-2 mt-2">
+                    Essas árvores são construídas da esquerda para a direita, pois a razão para isso é que a escolha das
+                    regras deve se basear na cadeia a ser gerada, que é lida da esquerda para a direita.
+                </p>
+                <p class="p-2 mt-2">
+                    Na construção descendente o objetivo é iniciar a análise com uma lista que contém inicialmente apenas
+                    o símbolo sentencial; a partir da análise dos 
+                </p>
+                <p class="p-2 mt-2">
+                    símbolos presentes na sentença, busca-se aplicar regras que permitam expandir os símbolos na lista
+                    até alcançar a sentença desejada.
+                </p>
+                <p class="p-2 mt-2">
+                    Outra característica é obter uma derivação mais à esquerda para uma sentença. Em termos de árvores
+                    gramaticais, a construção descendente busca a construção de uma árvore a partir da raiz usando
+                    pré-ordem para definir o próximo símbolo não-terminal que deve ser considerado para análise e
+                    expansão.
+                </p>
+                <p class="p-2 mt-2">
+                    Diferente da análise descentente temos a sintática ascendente, também chamada de bottom-up: a árvore de derivação correspondente a x é construída de baixo para cima, ou seja, das folhas, onde se encontra x, para a raiz, onde se encontra o símbolo inicial S. Nesse tipo de análise, é preciso decidir quando a regra A→β será aplicada, e devemos encontrar nós vizinhos rotulados com os símbolos de β. A redução pela regra A→β consiste em acrescentar à árvore um nó A, cujos filhos são os nós correspondentes aos símbolos de β.
+                </p>
+            </div>
+            <div class="col-6">
+                <img src="./img/Descentente.PNG" alt="" style="width: 650px;">
+                <cite class="mb-4">As regras são consideradas na ordem 1 2 4 6 3 4 6 6.</cite><br>
+                <h6 class="mt-4">Sendo:</h6>
+                <code style="background-color: aqua;" class="p-1 mb-4">E ⇒ E+T ⇒ T+T⇒ a+T ⇒ a+T*F ⇒ a+F*F ⇒ a+a*F ⇒ a+a*a</code>
+                <p class="mt-4 p-2 text-justify">
+                    Antes os compiladores usavam dois tipos de analisadores sintáticos. Analisadores baseados em precedência de operadores, sendo adequados à análise de expressões aritméticas. Analisadores do tipo descendentes recursivos implementam a técnica de construção descendente através de um conjunto de rotinas mutuamente recursivas para realizar a análise, sendo normalmente utilizados para outros comandos que não expressões aritméticas.
+                </p>
+            </div>
+        </div>
 
 
-    <section class="container mt-5 animated zoomInLeft">
 
 
     </section>

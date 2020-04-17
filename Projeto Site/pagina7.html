@@ -18,115 +18,140 @@
 
 
 <body>
-  <header class="row text-white bg-dark shadow-lg">
+  <div class="col-12 mx-auto text-center text-white bg-dark ">
+    <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
 
-    <div class="container p-4">
+    <h1>Antonio Jorge</h1>
+    <small>Curso de compiladores</small>
 
 
-      <div class="col-12 mx-auto text-center">
-        <img src="./img/jorge.jpg" class="rounded-circle " id="perfil-foto" />
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container">
+        <a class="navbar-brand text-center " href="./index.html">Inicio</a>
+        <button class="navbar-toggler navbar-light bg-light " type="button" data-toggle="collapse"
+          data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
 
-        <h1>Antonio Jorge</h1>
-        <small>Curso de compiladores</small>
-      </div>
-      <div class="col-12 mx-auto mt-4">
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item">
-            <a class="nav-link " href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html.html">Introdução a Compiladores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Pagina2.html">Análise LÉXICA/SINTÁTICA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="pagina3.html">Tipos De Compiladores</a>
-          </li>
-
-          <ul class="nav nav-pills">
-
-            <li role="presentation" class="dropdown p-2">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                aria-expanded="false">
-                Mas Aulas <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina7.html">Parti 1</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pagina2.html">Parte 2</a>
-                </li>
-              </ul>
+            <li class="nav-item h6 mb-0 ml-2 mr-2 ">
+              <a class="nav-link active" href="pagina1.html">Introdução a Compiladores</a><span
+                class="sr-only">(current)</span></a>
             </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina2.html">Análise LÉXICA/SINTÁTICA</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link" href="pagina3.html">Tipos De Compiladores</a>
+            </li>
+            <li class="nav-item h6 mb-0 ml-2 mr-2">
+              <a class="nav-link " href="pagina4.html">Compilação em JAVA</a>
+            </li>
+            <li class="nav-item dropdown h6 mb-0 ml-4 ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Mais aulas
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="nav-link " href="pagina5.html">Etapas de compilação</a>
+                <a class="nav-link" href="pagina6.html">Etapas de Tradução</a>
+                <a class="nav-link" href="pagina7.html">Parte 1</a>
+                <a class="nav-link" href="parte2.html">Parte 2</a>
+                <a class="nav-link" href="parte3.html">Parte 3</a>
+                <a class="nav-link" href="parte4.html">Parte 4</a>
+                <a class="nav-link" href="parte5.html">Parte 5</a>
+                <a class="nav-link" href="parte6.html">Parte 6</a>
+                <a class="nav-link" href="parte7.html">Parte 7</a>
+                <a class="nav-link" href="desafio.html">Desafio</a>
 
+              </div>
+            </li>
           </ul>
-        </ul>
-
+        </div>
       </div>
-    </div>
-  </header>
+    </nav>
+  </div>
 
-  
+
   <section class="container mt-5 animated zoomInLeft">
     <div class="row mb-2">
       <div class="col-6 mt-2">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kazE4zPRsxc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kazE4zPRsxc" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <div class="col-6 text-justify ">
         <h5 class="border-bottom text-center">Conceitos de Linguagens de Programação e Análise Léxica</h5>
         <div class="ml-2 mt-4">
-        <small class="pl-4" >
-          Análise léxica é o processo de analisar a entrada de linhas de caracteres (tal como o código-fonte de um programa de computador) e produzir uma sequência de símbolos chamado "símbolos léxicos" (lexical tokens), ou somente "símbolos" (tokens), que podem ser manipulados mais facilmente por um parser (leitor de saída).
-        </small><br><br>
-        <small class="pl-4">
-          A Análise Léxica é a forma de verificar determinado alfabeto. Quando analisamos uma palavra, podemos definir através da análise léxica se existe ou não algum caractere que não faz parte do nosso alfabeto, ou um alfabeto inventado por nós. O analisador léxico é a primeira etapa de um compilador.
-        </small>
-      </div>
+          <small class="pl-4">
+            Análise léxica é o processo de analisar a entrada de linhas de caracteres (tal como o código-fonte de um
+            programa de computador) e produzir uma sequência de símbolos chamado "símbolos léxicos" (lexical tokens), ou
+            somente "símbolos" (tokens), que podem ser manipulados mais facilmente por um parser (leitor de saída).
+          </small><br><br>
+          <small class="pl-4">
+            A Análise Léxica é a forma de verificar determinado alfabeto. Quando analisamos uma palavra, podemos definir
+            através da análise léxica se existe ou não algum caractere que não faz parte do nosso alfabeto, ou um
+            alfabeto inventado por nós. O analisador léxico é a primeira etapa de um compilador.
+          </small>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12 text-center mt-4 ">
         <h4 class="mb-4 border-bottom">Conceito de linguagem de programação</h4>
-          <p class="text-justify ml-4 mr-4 p-2">
-            A linguagem de programação é um método padronizado, formado por um conjunto de regras sintáticas e semânticas, de implementação de um código fonte - que pode ser compilado e transformado em um programa de computador, ou usado como script interpretado - que informará instruções de processamento ao computador. Permite que um programador especifique precisamente quais os dados que o computador irá atuar, como estes dados serão armazenados ou transmitidos e, quais ações devem ser tomadas de acordo com as circunstâncias. Linguagens de programação podem ser usadas para expressar algoritmos com precisão.
-          </p>
-          <p class="text-justify ml-4 mr-4 p-2">
-            Uma das principais metas das linguagens de programação é que programadores tenham uma maior produtividade, permitindo expressar suas intenções mais facilmente do que quando comparado com a linguagem que um computador entende nativamente. Assim, linguagens de programação são projetadas para adotar uma sintaxe de nível mais alto, que pode ser mais facilmente entendida por programadores humanos. Linguagens de programação são ferramentas importantes para que programadores e engenheiros de software possam escrever programas mais organizados e com maior rapidez.
-          </p>
-          <p class="text-justify ml-4 mr-4 p-2">
-            Linguagens de programação também tornam os programas menos dependentes de computadores ou ambientes computacionais específicos. Isto acontece porque programas escritos em linguagens de programação são traduzidos para o código de máquina do computador no qual será executado em vez de ser diretamente executado. Uma meta ambiciosa do Fortran, uma das primeiras linguagens de programação, era esta independência da máquina onde seria executada.
-          </p>
+        <p class="text-justify ml-4 mr-4 p-2">
+          A linguagem de programação é um método padronizado, formado por um conjunto de regras sintáticas e semânticas,
+          de implementação de um código fonte - que pode ser compilado e transformado em um programa de computador, ou
+          usado como script interpretado - que informará instruções de processamento ao computador. Permite que um
+          programador especifique precisamente quais os dados que o computador irá atuar, como estes dados serão
+          armazenados ou transmitidos e, quais ações devem ser tomadas de acordo com as circunstâncias. Linguagens de
+          programação podem ser usadas para expressar algoritmos com precisão.
+        </p>
+        <p class="text-justify ml-4 mr-4 p-2">
+          Uma das principais metas das linguagens de programação é que programadores tenham uma maior produtividade,
+          permitindo expressar suas intenções mais facilmente do que quando comparado com a linguagem que um computador
+          entende nativamente. Assim, linguagens de programação são projetadas para adotar uma sintaxe de nível mais
+          alto, que pode ser mais facilmente entendida por programadores humanos. Linguagens de programação são
+          ferramentas importantes para que programadores e engenheiros de software possam escrever programas mais
+          organizados e com maior rapidez.
+        </p>
+        <p class="text-justify ml-4 mr-4 p-2">
+          Linguagens de programação também tornam os programas menos dependentes de computadores ou ambientes
+          computacionais específicos. Isto acontece porque programas escritos em linguagens de programação são
+          traduzidos para o código de máquina do computador no qual será executado em vez de ser diretamente executado.
+          Uma meta ambiciosa do Fortran, uma das primeiras linguagens de programação, era esta independência da máquina
+          onde seria executada.
+        </p>
       </div>
     </div>
     <div class="row">
       <div class="col-6 text-center mt-4">
         <h4 class="mb-4 border-bottom">Primeiro estado da análise</h4>
         <p class="text-justify ml-4 mr-4 p-2">
-          A primeira etapa lê a entrada de caracteres, um de cada vez, mudando o estado em que os caracteres se encontram. Quando o analisador encontra um caractere que ele não identifica como correto, ele o chama de "estado morto" então, ele volta à última análise que foi aceita e assim tem o tipo e comprimento do léxico válido.
+          A primeira etapa lê a entrada de caracteres, um de cada vez, mudando o estado em que os caracteres se
+          encontram. Quando o analisador encontra um caractere que ele não identifica como correto, ele o chama de
+          "estado morto" então, ele volta à última análise que foi aceita e assim tem o tipo e comprimento do léxico
+          válido.
 
-        <p class="text-justify ml-4 mr-4 p-2">Um léxico, entretanto, é uma única lista de caracteres conhecidas de ser um tipo correto. Para construir um símbolo, o analisador léxico necessita de um segundo estado.
-        </p>
+          <p class="text-justify ml-4 mr-4 p-2">Um léxico, entretanto, é uma única lista de caracteres conhecidas de ser
+            um tipo correto. Para construir um símbolo, o analisador léxico necessita de um segundo estado.
+          </p>
         </p>
       </div>
       <div class="col-6 text-center mt-4">
         <h4 class="mb-4 border-bottom">Segundo estado da análise</h4>
         <p class="text-justify ml-4 mr-4 p-2">
-          Nesta etapa são repassados os caracteres do léxico para produzir um valor. O tipo do léxico combinado com seu valor é o que adequadamente constitui um símbolo, que pode ser dado a um parser. (Alguns símbolos tais como parênteses não têm valores, e então a função da análise não pode retornar nada).
+          Nesta etapa são repassados os caracteres do léxico para produzir um valor. O tipo do léxico combinado com seu
+          valor é o que adequadamente constitui um símbolo, que pode ser dado a um parser. (Alguns símbolos tais como
+          parênteses não têm valores, e então a função da análise não pode retornar nada).
         </p>
         <p class="text-justify ml-4 mr-4 p-2">
-          A análise léxica escreve um parser muito mais fácil. Em vez de ter que acumular, renomeia seus caracteres individualmente. O parser não mais se preocupa com símbolos e passa a preocupar-se só com questões de sintática. Isto leva a eficiência de programação, e não eficiência de execução. Entretanto, desde que o analisador léxico é o subsistema que deve examinar cada caractere único de entrada, podem ser passos intensivos e o desempenhos se torna crítico, pode estar usando um compilador.
+          A análise léxica escreve um parser muito mais fácil. Em vez de ter que acumular, renomeia seus caracteres
+          individualmente. O parser não mais se preocupa com símbolos e passa a preocupar-se só com questões de
+          sintática. Isto leva a eficiência de programação, e não eficiência de execução. Entretanto, desde que o
+          analisador léxico é o subsistema que deve examinar cada caractere único de entrada, podem ser passos
+          intensivos e o desempenhos se torna crítico, pode estar usando um compilador.
         </p>
       </div>
     </div>
@@ -137,21 +162,25 @@
     </div>
     <div class="row">
       <div class="col-6 text-center mt-4">
-       
+
         <p class="text-justify ml-4 mr-4 p-2">
-          Um token ou também chamado componente léxico é uma cadeia de caracteres que tem um significado coerente em verdadeira linguagem de programação. Exemplos de tókenes poderiam ser palavras-chave (if, else, while, int, ...), identificadores, números, sinail, ou um operador de vários caracteres, (por exemplo, := "':+"' ).
+          Um token ou também chamado componente léxico é uma cadeia de caracteres que tem um significado coerente em
+          verdadeira linguagem de programação. Exemplos de tókenes poderiam ser palavras-chave (if, else, while, int,
+          ...), identificadores, números, sinail, ou um operador de vários caracteres, (por exemplo, := "':+"' ).
         </p>
       </div>
       <div class="col-6 text-center mt-4">
         <p class="text-justify ml-4 mr-4 p-2">
-          São os elementos mais básicos sobre os quais se desenvolve toda a tradução de um programa, surgem na primeira fase, chamada análise léxico, no entanto se seguem utilizando nas seguintes fases (análises sintáctico e análises semántico) antes de perder na fase de síntese.
+          São os elementos mais básicos sobre os quais se desenvolve toda a tradução de um programa, surgem na primeira
+          fase, chamada análise léxico, no entanto se seguem utilizando nas seguintes fases (análises sintáctico e
+          análises semántico) antes de perder na fase de síntese.
         </p>
       </div>
     </div>
 
 
   </section>
-  
+
   <section id="footer">
 
     <div class="container">
