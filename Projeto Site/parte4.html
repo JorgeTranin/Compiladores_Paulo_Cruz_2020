@@ -76,7 +76,103 @@
 
 
     <section class="container mt-5 animated zoomInLeft">
+        <div class="row">
+            <div class="col-12 border-bottom text-center">
+                <h3>Linguagens e Compiladores - Tradução dirigida por sintaxe</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 mt-4 p-2 text-justify">
+                <p>
+                    São definições que usam uma gramática livre, onde cada símbolo gramatical possui um conjunto
+                    associado de atributos. Também, uma técnica que permite realizar tradução (geração de código)
+                    concomitantemente com a análise sintática.
+                </p>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-3">
+                    <p>A execução das ações semânticas tem suas características:</p>
 
+                    
+                    <li class="mt-2 p-1">Gerar código intermediário</li>
+                    <li class="mt-2 p-1">Gerar ou interpretar código</li>
+                    <li class="mt-2 p-1">Armazenar informações na tabela de símbolos</li>
+                    <li class="mt-2 p-1">Checar a semântica dos comandos</li>
+                    <li class="mt-2 p-1">Emitir mensagens de erro, etc.</li>
+                    
+                </div>
+                <div class="col-4 ">
+                    <iframe width="450" height="285" src="https://www.youtube.com/embed/_kGAgukarkk" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+        
+
+        <div class="row">
+            <div class="col-2 mt-2 p-1 text-justify"></div>
+            <div class="col-8 col-2 mt-2 p-1 text-justify">
+                <p class="mt-2 p-1">
+                    Atualmente utilizada em quase todos os compiladores modernos essa tradução dirigida por sintaxe é
+                    técnica de especificação de compiladores tradutores que permite associar ações semânticas às regras
+                    da gramática.
+                </p>
+                <p class="mt-2 p-1">
+                    Com ela é possível fazer uma tradução de alto nível para traduzir para uma linguagem alvo, obtida
+                    para as diversas expressões do programa, a representação da árvore Gramatical.
+                </p>
+                <p class="mt-2 p-1">
+                    As atividades são realizadas ao fim da análise sintática para toda árvore, ela é realmente concluída
+                    com as ações semânticas, numa associação à aplicação das regras de reconhecimento do analisador
+                    sintático.
+                </p>
+                <p class="mt-2 p-1">
+                    Para se gerar o código, não é necessário ir diretamente para a linguagem assembly do
+                    processador-alvo, pois o analisador sintático gera o mesmo com uma linguagem próxima para uma
+                    máquina abstrata, isso independente de processadores específicos. Depois esse código produzido
+                    traduz para a linguagem assembly desejada que se deseja. Ganha-se que grande parte do compilador é
+                    liberada para ser reaproveitada em trabalhos de tipos de processadores díspares.
+                </p>
+                <p class="mt-2 p-1">
+                    Na tradução dirigida pela sintaxe assume-se que os terminais tenham somente atributos sintetizados
+                    quando as definições não apresentam nenhuma regra semântica. Esses atributos são bastante usados na
+                    prática, onde uma sintaxe com os mesmos é chamada de definição S-atribuída.
+                </p>
+                <p class="mt-2 p-1">
+                    Os valores para os atributos dos terminais geralmente são fornecidos pelo léxico:
+                </p>
+                <strong class="mt-2 p-1">F -> dígito F.val = dígito.lexval</strong> </br>
+                <small class="mt-2 p-1">São avaliados de baixo para cima, das folhas para a raiz.</small></br>
+                <p class="mt-2 p-1">Em resumo:</p>
+                <ul>
+                    <li class="mt-2 p-1">É uma tradução de linguagens guiada por gramáticas livres de contexto;</li>
+                    <li class="mt-2 p-1">faz uma amarração de atributos, que representam valores (tipo, endereço, etc.),
+                        aos símbolos gramaticais de regras de produção, onde são representadas as construções de
+                        linguagens;</li>
+                    <li class="mt-2 p-1">Faz associação de regras semânticas às produções, a fim de realizar cálculos
+                        dos valores de atributos amarrados.</li>
+                </ul>
+                <h5 class="mt-2 p-1 border-bottom text-center">Arvore de Sintaxe:</h5>
+                <ul>
+                    <li class="mt-2 p-1">É uma forma simplificada da arvore de derivação, somente os operadores da
+                        linguagem aparecem como folhas, passando a ser nós internos.</li>
+                    <li class="mt-2 p-1">Suas três principais funções, gerafolha criando nós identificadores com dois
+                        campos, rotulo ‘ID’ e nome do identificador. A outra gerafolha cria um nó de número com dois
+                        campos, rotulo ‘num’ e valor do número. Por fim a ultima gerafolha, cria um nó de operadores com
+                        rotulo ‘op’ e dois campos contendo ponteiros para as sub-árvores esquerda e direita.</li>
+                </ul>
+                <h6 class="mt-2 p-1">Exemplo: </h6>
+                <img class="ml-4" src="./img/Arvore Tradução dirigida por sintaxe.PNG" alt="">
+            </div>
+        </div>
+        <div class="col-2"></div>
+
+        </div>
 
     </section>
 
