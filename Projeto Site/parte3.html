@@ -76,7 +76,90 @@
 
 
     <section class="container mt-5 animated zoomInLeft">
+        <div class="row">
+            <div class="col-12 text-center border-bottom">
+                <h2>Análise Sintática Ascendente</h2>
+            </div>
 
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <p class="p-1 mt-2 text-center">Também conhecida como buttom-up suas principais características são:
+                </p>
+                <ul>
+                    <li class="p-1 mt-2">
+                        Corresponde a construção de uma arvore de derivação para uma cadeia de
+                        entrada a partir das folhas em direção a raiz.
+                    </li>
+                    <li class="p-1 mt-2">
+                        Constrói a árvore de derivação de baixo para cima, das folhas para raiz.
+                    </li>
+                    <li class="p-1 mt-2">Produz uma derivação mais à direita para uma cadeia de entrada.</li>
+                    <li class="p-1 mt-2">Processo de redução de uma string w para o símbolo inicial da gramática. </li>
+                    <li class="p-1 mt-2">Em cada passo da redução, uma sub-string é associada com o corpo de uma
+                        produção e obtém-se a “cabeça” dessa produção.</li>
+                    <li class="p-1 mt-2">Decisões chave: quando reduzir e quais produções utilizar − Por definição,
+                        redução é o inverso da derivação.</li>
+                </ul>
+                <div class="text-center">
+                    <img src="./img/Analise_ascendente.PNG">
+                </div>
+
+                <h5 class="mt-3 p-1 ml-3 border-bottom">Analisadores shift-reduce:</h5>
+                <p class="p-1 mt-2 ml-3">
+                    Forma de análise ascendente onde uma pilha contém símbolos da gramática e um
+                    buffer de entrada contém o restante da cadeia a ser reconhecida sintaticamente.
+                </p>
+                <p class="p-1 mt-2 ml-3">
+                    O símbolo $ é usado para marcar o fim da pilha e o último caractere da entrada.
+                </p>
+                <p class="p-1 mt-2 ml-3">
+                    Nos exemplos seguintes inicialmente, a pilha está vazia e a cadeia w representa a entrada.
+                </p>
+                <p class="p-1 mt-2 ml-3">
+                    Durante o parsing (da esquerda para direita), o analisador desloca (shift) zero ou mais
+                    símbolos de entrada na pilha, até que está pronto para reduzir (reduce) uma string B (no
+                    topo da pilha) para a “cabeça” da produção apropriada.
+                </p>
+
+                <img src="./img/Shift_reduce2.PNG" class="ml-3 p-1">
+
+                <p class="p-1 mt-2 ml-3">
+                    O analisador sintático repete esse ciclo até encontrar um erro (nenhuma produção é
+                    encontrada) ou até que a pilha contém o símbolo de início e a entrada está vazia.
+
+                </p>
+                <div class="text-center">
+                    <img src="./img/Shift_reduce3.PNG" style="width: 63%;" class="ml-3"><br>
+                </div>
+                <h6 class="p-1 mt-4 ml-3">No exemplo acima temos:</h6>
+                <li class="p-1 mt-2 ml-3">
+                    Deslocar (shift): deslocar o próximo símbolo da entrada no topo da pilha
+                </li>
+                <li class="p-1 mt-2 ml-3">
+                    Reduzir (reduce): a parte (mais à direita) da string a ser reduzida está no topo da pilha.
+                    Decidir com qual não terminal substituir a string.
+                </li>
+                <li class="p-1 mt-2 ml-3">
+                    Aceitar: analisador sintático finalizou com sucesso
+                </li>
+                <li class="p-1 mt-2 ml-3">
+                    Error: erro sintático.
+                </li>
+
+
+                <h5 class="p-1 mt-2 ml-3 border-bottom">Analisadores LR:</h5>
+                <p class="p-1 mt-2 ml-3">
+                    São classificados em SLR, que são fáceis de implementar e LALR
+                    são mais complexos.
+                </p>
+                <div class="text-center">
+                    <img src="./img/AnalisadoresLR.PNG" alt="" class="ml-3">
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
 
     </section>
 
